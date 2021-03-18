@@ -13,6 +13,16 @@ img {
     max-height: 100%;
 }
 
+/* Reset bootstrap grid  */
+.row {
+    justify-content: space-between;
+    margin: 0;
+}
+.row>* {
+    padding-right: 0;
+    padding-left: 0;
+}
+
 /* ======================= HAEDER ========================  */
 
 /* ----------------- Header Top ----------------- */
@@ -443,3 +453,8 @@ img {
 .copyright ul li:first-child{
     border: none;
 }
+
+.section-tags ul li {margin-bottom: 5px;}
+.product-item {margin-bottom: 30px;}
+.col-lg-3
+.col-sm-6.store-item{max-width: 49%;}
