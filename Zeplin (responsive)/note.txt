@@ -1,0 +1,10 @@
+web guide
+https://app.zeplin.io/project/5a4479055d91b2ef9e1b74b5/screen/60190949b01821bd8150474a
+mobile guide
+https://app.zeplin.io/project/5a4479055d91b2ef9e1b74b5/screen/6023a3a8c009151aaa654ac8
+image - icon
+https://app.zeplin.io/project/5a4479055d91b2ef9e1b74b5/screen/601a5256eef000241b154e38
+
+
+string.indexOF()- tim phan tu
+dùng modal để hiển thị phần tử tìm kiếm

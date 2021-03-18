@@ -1,0 +1,42 @@
+.mobile-guide{
+    max-width: 414px;
+    padding: 20px 16px;
+}
+.mobile-guide svg {
+    width: 20px;
+    height: 20px;
+}
+.m-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.m-logo {
+    max-width: 100px;
+   position: relative;
+
+}
+.m-logo svg{
+    position: absolute;
+    top: 3px;
+    right: -25px;
+
+}
+
+img {
+    width: 100%;
+}
+.m-user-info div{
+display: inline-block;
+margin-left: 20px;
+}
+
+
+.m-footer ul  {
+    display: flex;
+    justify-content: space-between;
+}
+.m-footer ul li {
+    text-align: center;
+    font-size: 9px;
+}
