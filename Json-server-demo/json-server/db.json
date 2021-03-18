@@ -1,0 +1,25 @@
+{
+  "listStudent": [
+    {
+      "name": "Nguyễn Tiến Khánh",
+      "age": "27",
+      "email": "tienkhanhvn@gmail.com",
+      "description": "Note 1",
+      "id": 1
+    },
+    {
+      "name": "Nguyễn Tiến Khoa",
+      "age": "24",
+      "email": "tienkhoa@gmail.com",
+      "description": "Note 2",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "name": "Nguyễn Ngọc Lan",
+      "age": 15,
+      "email": "ngoclan@gmail.com",
+      "description": "Note 3"
+    }
+  ]
+}
