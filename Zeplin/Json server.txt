@@ -1,0 +1,16 @@
+1. Nếu hệ thống chưa có json-server, câu lệnh cài đặt, nếu đã cài đặt qua 1 lần rồi thì thôi:
+npm install -g json-server
+------------------
+2.Khởi tạo package.json chứa thông tin server
+npm init
+3.Tạo db.json, là nơi chứa thông tin cần hiển thị bên phía client(khách hàng).
+-----listStudent-----
+4.Tại file package.json, mục scripts thêm lệnh:
+"scripts": {
+    "server":"json-server --watch db.json" --> ý nói tham chiếu đến db.json
+  },
+5. Chạy local ảo: 
+npm run "tên lệnh" -> Ví dụ: npm run server
+
+*6. Nếu có update thông tin gì đó cần bảo lưu:
+npm install --save json-server

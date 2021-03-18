@@ -1,0 +1,36 @@
+{
+    "arrProduct":[
+        {
+            "id": 1,
+            "img": "https://github.com/TienKhanh/zeplin/blob/master/zeplin-server/images/card-wine-1.jpg?raw=true",
+            "title": "샤또 마고 매그넘",
+            "regular_price": "259,000원",
+            "old_price": "",
+            "discount_price": ""
+        },
+        {
+            "id": 2,
+            "img": "https://github.com/TienKhanh/zeplin/blob/master/zeplin-server/images/card-wine-2.jpg?raw=true",
+            "title": "라미 울지 로드 빈야드 샤르도네",
+            "regular_price": "",
+            "old_price": "180,000원",
+            "discount_price": "168,000원"
+        },
+        {
+            "id": 3,
+            "img": "https://github.com/TienKhanh/zeplin/blob/master/zeplin-server/images/card-wine-3.jpg?raw=true",
+            "title": "도멘 페로 미노 샹볼 뮈지니 프르미에 크뤼 라 콩브 도르보 울트라 비에유 빈뉴",
+            "regular_price": "39,000원",
+            "old_price": "",
+            "discount_price": ""
+        },
+        {
+            "id": 4,
+            "img": "https://github.com/TienKhanh/zeplin/blob/master/zeplin-server/images/card-wine-4.jpg?raw=true",
+            "title": "마르께스 데 까사 콘차 까베르네 소비뇽",
+            "regular_price": "",
+            "old_price": "259,000원",
+            "discount_price": "248,000원"
+        }
+    ]
+}
