@@ -5,6 +5,7 @@ function getDayString(date) {
     return a
 }
 
+console.log("Bài 1:", getDayString(new Date(2021,1,3)))
 
 // Bài 2: Tìm ngày trong quá khứ dựa vào khoảng cách giữa hai ngày
 function getDateAgo(date, days) {
@@ -14,8 +15,8 @@ function getDateAgo(date, days) {
     return new Date(dateAgo); // Biến đổi số thành ngày
 }
 
-// let date = new Date(2015, 0, 2);
-// console.log( getDateAgo(date, 365) ); 
+let date = new Date(2015, 0, 2);
+console.log( "Bài 2:", getDateAgo(date, 1) ); 
 
 
 // Bài 3: Tìm ngày cuối cùng trong 1 tháng
@@ -24,7 +25,7 @@ function getLastDayOfMonth(year, month) {
     return date.getDate()
 }
 
-// console.log(getLastDayOfMonth(2012,1))
+console.log("Bài 3:",getLastDayOfMonth(2012,1))
 
 // Bài 4: Tạo một hàm getSecondsToTomorrow() trả về số giây cho đến ngày mai.
 
@@ -35,7 +36,7 @@ function getSecondsToTomorrow() {
     return secs;
 }
 
-// console.log (getSecondsToTomorrow())
+console.log ("Bài 4:", getSecondsToTomorrow())
 
 // Bài 5: 
 function formatDate(date){
@@ -70,7 +71,7 @@ function formatDate(date){
     }
 }
 
-// console.log(formatDate(new Date(new Date - 86400 * 1000)));
+console.log("Bài 5:",formatDate(new Date(new Date - 86400 * 1000)));
 
 // Bài 6: Hàm tính toán chênh lệch giữa 2 ngày bất kỳ ở dạng ( dd/mm/yyy hoặc mm/dd/yyyy).
 
@@ -79,7 +80,7 @@ function distanceDate(date1, date2){
     return d
 }
 
-// console.log(distanceDate(new Date(2021,2,20), new Date()))
+console.log("Bài 6: ",distanceDate(new Date(2021,2,20), new Date()))
 
 
 
