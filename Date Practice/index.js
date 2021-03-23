@@ -74,9 +74,12 @@ function formatDate(date){
 
 // Bài 6: Hàm tính toán chênh lệch giữa 2 ngày bất kỳ ở dạng ( dd/mm/yyy hoặc mm/dd/yyyy).
 
+function distanceDate(date1, date2){
+    let d = Math.floor((date2 - date1)/1000/60/60/24)
+    return d
+}
 
-
-
+// console.log(distanceDate(new Date(2021,2,20), new Date()))
 
 
 
