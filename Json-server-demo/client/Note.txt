@@ -1,0 +1,49 @@
+Tìm kiếm:
+---------------------
+json server online
+Pagination bootstrap
+scss to css conveter
+--------------------------
+
+isotope js
+masonry
+=> Cách sắp xếp giao diện
+
+Tạo hiệu ứng đẹp với wow.js vào viblo.asia để xem ví dụ và lấy link cdn
+wow => delac.io/wow/
+wow js codepen => để xem ví dụ và cách sử dụng
+=> Hiệu ứng chạy item
+------------------
+md bootstrap cho hiệu ứng
+deep clone là gì
+typescript -> Ngôn ngữ hướng đối tượng
+-----------------
+
+const reUpdateDom = (obj={key:`name_like=`, page:1, limit: 10}) => Đặt giá trị mặc định cho một function
+
+for (let item of arr) => Duyệt qua từng phần tử trong mảng, không phải từng index.
+-------------------
+
+F11 thoát ra khỏi function đang chạy
+F10 next step
+F9 đi vào một function
+F8 chạy hết toàn bộ chương trình còn lại
+Xài debugger
+
+---------------------
+Reduce trong javascript
+numbers = [100,34,67]
+numbers.reduce (myFunction)
+
+function myFunction (kp,num){
+    return kp - num
+}
+
+-----------------------
+Đẩy dữ liệu dạng number hoặc boolean lên json server:
+data: JSON.stringify(data),
+contentType: 'application/json'
+
+
+
+

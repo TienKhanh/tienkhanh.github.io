@@ -1,22 +1,29 @@
 $(document).ready(function () {
 
+    let default_Params = {
+        key: `name_like=`,
+        page: 1,
+        limit: 5,
+        sort: ""
+    }
+
     // Tìm kiếm từ khóa
     $("#search-name").keyup(function (event) {
         let key = $("#search-name").val();
 
         if (event.which == 13) {
-            console.log(event)
-            reUpdateDom(`name_like=${key}`);
+            // Giữ nguyên default_Params, chỉ thay đổi key.
+            let params = { ...default_Params, key: `name_like=${key}` }
+            reUpdateDom(params)
         }
     });
 
-    const reUpdateDom = (key) => {
-        let url = "";
-        if(key == ""){
-            url = `http://localhost:3000/listStudent`;
-        }else{
-            url = `http://localhost:3000/listStudent?${key}`;
-        }
+
+    const reUpdateDom = (obj = default_Params) => {
+
+        let { page, key, limit, sort } = obj;
+        let url = `http://localhost:3000/listStudent?_page=${page}&_limit=${limit}&${key}&_sort=${sort}`;
+
         $("#body-data").html("");
         $.get(url, function (data, status) {
             data.forEach(item => {
@@ -76,12 +83,21 @@ $(document).ready(function () {
                 </tr>
                 `)
             });
+
             deleteClick();
             updateClick();
+            // createPagination();
         });
-
     }
 
+    // const createPagination = () => {
+    //     $.get(`http://localhost:3000/listStudent`, function(data){
+    //         let totalItem = data.length;
+    //         let perPage = 5;
+    //         let countPagination = Math.ceil(totalItem/perPage);
+    //         // console.log(countPagination)
+    //     })
+    // }
     const deleteClick = () => {
         $(".data-delete").click(function (event) {
             let { id } = event.currentTarget.dataset;
@@ -102,7 +118,7 @@ $(document).ready(function () {
             let email = $(`#field-email-${id}`).val();
             let age = $(`#field-age-${id}`).val();
             let description = $(`#field-description-${id}`).val();
-            let data = { name, age, email, description}
+            let data = { name, age, email, description }
             console.log(data)
             $.ajax({
                 type: "PUT",
@@ -121,23 +137,41 @@ $(document).ready(function () {
 
     // Hiển thị nội dung 
     reUpdateDom()
-    
+
+    $(".page-item").click(function (event) {
+        // event.target chạy ra DOM hiện tại
+        // let page = $(event.target).text();
+        let page = event.target.innerText;
+        let params = { ...default_Params, page }
+        reUpdateDom(params)
+    });
+    $("#up-sort-name").click(function (event) {
+        let params = { ...default_Params, sort: `name&_order=asc` }
+        reUpdateDom(params)
+    });
+    $("#down-sort-name").click(function (event) {
+        let params = { ...default_Params, sort: `name&_order=desc` }
+        reUpdateDom(params)
+    });
 
     $("#onAdd").click(function () {
         let name = $("#field-name").val();
-        let age = $("#field-age").val();
+        let age = parseInt($("#field-age").val());
         let email = $("#field-email").val();
-        let data = { name, age, email, description: "Add new" }
+        let data = { name, age, email, description: true }
         $.ajax({
             type: "POST",
             url: `http://localhost:3000/listStudent`,
-            data: data,
+            data: JSON.stringify(data),
             success: function (result) {
                 let key = $("#search-name").val();
                 reUpdateDom(`name_like=${key}`);
                 $("#exampleModal").modal("hide");
             },
-            dataType: 'json'
+            contentType: 'application/json'
+
+
+            
         });
     });
 

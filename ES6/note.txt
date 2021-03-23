@@ -1,0 +1,9 @@
+Khai báo biến:
+let obj = {name: "Khanh", age: 28}
+Trích các phần tử bên trong obj ra các biến có tên tương đương
+let {name, age} = obj
+Như vậy ta có 2 biến, name = "Khanh" và age = 28
+
+
+
+var a = 1+1 == 3 ? "tung": 1+1 == 2 ? "khoa":"nam"

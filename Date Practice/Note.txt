@@ -1,0 +1,5 @@
+Date.now() => Trả về thời gian hiện tại
+
+and
+
+new Date(1381216317325); => Đưa integer về time

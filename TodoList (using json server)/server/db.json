@@ -1,0 +1,19 @@
+{
+  "todoList": [
+    {
+      "id": 1,
+      "title": "Đá bóng",
+      "status": "1"
+    },
+    {
+      "id": 2,
+      "title": "Cầu lông",
+      "status": "0"
+    },
+    {
+      "id": 3,
+      "title": "Bóng rổ",
+      "status": 1
+    }
+  ]
+}
