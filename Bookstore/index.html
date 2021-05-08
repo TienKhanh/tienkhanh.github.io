@@ -1,37 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bookstore</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
     <div id="main">
         <div class="header">
-            
+
             <div class="header-top container">
-                    <!-- <div class="quote">
+                <!-- <div class="quote">
                         ~~~ Mỗi cuốn sách là một bức tranh kỳ diệu về cuộc sống ~~~
                         
                     </div> -->
-                    <div class="top-item">
-                        <ul>
-                            <li><a href="">Đăng nhập</a></li>
-                            <li><a href="">Về Bookstore</a></li>
-                            <li><a href="">Hỗ trợ</a></li>
-                            <li>
-                                <a href=""><i class="fab fa-facebook-f"></i></a>
-                                <a href=""><i class="fab fa-instagram"></i></a>
-                                <a href=""><i class="far fa-envelope"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    
+                <div class="top-item">
+                    <ul>
+                        <li><a href="">Đăng nhập</a></li>
+                        <li><a href="">Về Bookstore</a></li>
+                        <li><a href="">Hỗ trợ</a></li>
+                        <li>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                            <a href=""><i class="far fa-envelope"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
             <div id="header-bottom">
                 <div class="container">
@@ -42,7 +49,7 @@
                         <ul>
                             <li class="active"><a href="">Trang chủ</a></li>
                             <li>
-                                <a href="" class="list-book">Sách trong nước<i class="fas fa-sort-down"></i></a>
+                                <a href="">Sách trong nước<i class="fas fa-sort-down"></i></a>
                                 <div class="sub-menu">
                                     <ul>
                                         <li><a href="">Văn học</a></li>
@@ -57,7 +64,7 @@
                                 </div>
                             </li>
                             <li>
-                                <a href="" class="list-book">Sách nước ngoài<i class="fas fa-sort-down"></i></a>
+                                <a href="">Sách nước ngoài<i class="fas fa-sort-down"></i></a>
                                 <div class="sub-menu">
                                     <ul>
                                         <li><a href="">Fiction</a></li>
@@ -71,32 +78,77 @@
                             <li><a href="">Sách bán chạy</a></li>
                             <li><a href="">Phiên chợ cũ</a></li>
                             <li><a href="">Review sách</a></li>
-                            <li><i class="fas fa-search"></i></li>    
+                            <li><i class="fas fa-search"></i></li>
                             <!-- <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>     -->
                         </ul>
                     </div>
-                </div>  
+                </div>
             </div>
         </div>
         <div class="content">
-            <div class="ads container">
-                <div class="slider">
-                    SLIDER
+
+            <div class="domestic-books container shadow-sm section">
+                <div class="row">
+                    <div class="box-title col-xl-12 col-md-12 col-sm-12 d-flex justify-content-between pt-2 pb-2 align-items-center">
+                        <div class="title">Sách trong nước</div>
+                        <div class="suggest-list">
+                            <ul>
+                                <li><a href="">Văn học</a></li>
+                                <li><a href="">Kinh tế</a></li>
+                                <li><a href="">Xem tất cả</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="banner">
-                    <div class="banner-item">
-                        <img src="images/Banner 1.jpg" alt="">
+
+                <div class="box-content book-list row pt-3 pb-3">
+                    <div class="book-item col">
+                        <img src="images/domestic-books/Để Con Được Ốm -76-95-20.jpg" alt="">
+                        <div class="book-title">Để con được ốm</div>
+                        <div class="new-price">69.700đ</div>
+                        <div class="old-price">85.000đ</div>
                     </div>
-                    <div class="banner-item">
-                        <img src="images/Banner 2.jpg" alt="">
+                    <div class="book-item col">
+                        <img src="images/domestic-books/Để Con Được Ốm -76-95-20.jpg" alt="">
+                        <div class="book-title">Để con được ốm</div>
+                        <div class="new-price">69.700đ</div>
+                        <div class="old-price">85.000đ</div>
                     </div>
-                    <div class="banner-item">
-                        <img src="images/Banner 3.jpg" alt="">
+                    <div class="book-item col">
+                        <img src="images/domestic-books/Để Con Được Ốm -76-95-20.jpg" alt="">
+                        <div class="book-title">Để con được ốm</div>
+                        <div class="new-price">69.700đ</div>
+                        <div class="old-price">85.000đ</div>
                     </div>
+                    <div class="book-item col">
+                        <img src="images/domestic-books/Để Con Được Ốm -76-95-20.jpg" alt="">
+                        <div class="book-title">Để con được ốm</div>
+                        <div class="new-price">69.700đ</div>
+                        <div class="old-price">85.000đ</div>
+                    </div>
+                    <div class="book-item col">
+                        <img src="images/domestic-books/Để Con Được Ốm -76-95-20.jpg" alt="">
+                        <div class="book-title">Để con được ốm</div>
+                        <div class="new-price">69.700đ</div>
+                        <div class="old-price">85.000đ</div>
+                    </div>
+                    
+                    
                 </div>
             </div>
         </div>
         <div class="footer"></div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
