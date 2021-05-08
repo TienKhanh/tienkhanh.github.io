@@ -1,22 +1,23 @@
 // Bài 1: Hiển thị thứ của ngày đưa vào
-function getDayString(date) {
+function dayInWeek(date) {
     let dayStr = date.getDay();
     a = dayStr == 0 ? `SU` : dayStr == 1 ? `MO` : dayStr == 2 ? `TU` : dayStr == 3 ? `WE` : dayStr == 4 ? `TH` : dayStr == 5 ? `FR` : `SA`;
     return a
 }
 
-console.log("Bài 1:", getDayString(new Date(2021,1,3)))
+// console.log("Bài 1:", dayInWeek(new Date(2021,2,23)))
+// console.log("Bài 1:", dayInWeek(new Date("3/23/2021"))) // => Mặc định hiểu "mm/dd/yyyy"
 
 // Bài 2: Tìm ngày trong quá khứ dựa vào khoảng cách giữa hai ngày
 function getDateAgo(date, days) {
     let currentDay = date.getDate(); // Lấy ngày
     let agoDay = currentDay - days; // Lấy chênh lệch ngày
     let dateAgo = date.setDate(agoDay); // Trả về chuỗi số
-    return new Date(dateAgo); // Biến đổi số thành ngày
+    return new Date( dateAgo); // Biến đổi số thành ngày
 }
 
-let date = new Date(2015, 0, 2);
-console.log( "Bài 2:", getDateAgo(date, 1) ); 
+// let date = new Date(2015, 0, 2);
+// console.log( "Bài 2:", getDateAgo(date, 1)); 
 
 
 // Bài 3: Tìm ngày cuối cùng trong 1 tháng
@@ -25,7 +26,7 @@ function getLastDayOfMonth(year, month) {
     return date.getDate()
 }
 
-console.log("Bài 3:",getLastDayOfMonth(2012,1))
+// console.log("Bài 3:",getLastDayOfMonth(2012,1))
 
 // Bài 4: Tạo một hàm getSecondsToTomorrow() trả về số giây cho đến ngày mai.
 
@@ -36,7 +37,7 @@ function getSecondsToTomorrow() {
     return secs;
 }
 
-console.log ("Bài 4:", getSecondsToTomorrow())
+// console.log ("Bài 4:", getSecondsToTomorrow())
 
 // Bài 5: 
 function formatDate(date){
@@ -71,16 +72,16 @@ function formatDate(date){
     }
 }
 
-console.log("Bài 5:",formatDate(new Date(new Date - 86400 * 1000)));
+// console.log("Bài 5:",formatDate(new Date(new Date - 86400 * 1000)));
 
-// Bài 6: Hàm tính toán chênh lệch giữa 2 ngày bất kỳ ở dạng ( dd/mm/yyy hoặc mm/dd/yyyy).
+// Bài 6: Hàm tính toán chênh lệch giữa 2 ngày bất kỳ ở dạng ( dd/mm/yyyy hoặc mm/dd/yyyy).
 
 function distanceDate(date1, date2){
     let d = Math.floor((date2 - date1)/1000/60/60/24)
     return d
 }
 
-console.log("Bài 6: ",distanceDate(new Date(2021,2,20), new Date()))
+// console.log("Bài 6: ",distanceDate(new Date(2021,2,20), new Date()))
 
 
 
