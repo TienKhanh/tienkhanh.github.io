@@ -16,6 +16,7 @@ ul {
     list-style-type: none;
     margin: 0;
 }
+
 /* .container {
     width: 1120px;
     margin: 0 auto;
@@ -25,18 +26,21 @@ ul {
 
 .header {
     background: #334862;
+    position: relative;
+    z-index: 999;
 }
 
 /* Header top  */
+
 .header-top {
     position: relative;
     text-align: right;
-    padding: 8px 0; 
+    padding: 8px 0;
 }
-.header-top .quote{
+
+.header-top .quote {
     font-size: 14px;
-    padding: 8px 0; 
-    
+    padding: 8px 0;
 }
 
 .header-top .top-item ul li {
@@ -52,39 +56,43 @@ ul {
     text-decoration: none;
 }
 
-.header-top .top-item ul li a:hover{
-    color:#fff;
+.header-top .top-item ul li a:hover {
+    color: #fff;
 }
 
-.header-top .top-item ul li:first-child{
+.header-top .top-item ul li:first-child {
     border: none;
 }
-.header-top .top-item ul li:last-child a{
+
+.header-top .top-item ul li:last-child a {
     padding-left: 5px;
 }
 
 /* Header bottom  */
+
 #header-bottom {
     background: #FFF;
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
 }
+
 /* Logo  */
+
 #logo {
     padding-top: 15px;
     text-align: center;
 }
 
 /* Main menu  */
-.main-menu { 
+
+.main-menu {
     font-family: 'Merriweather', serif;
     padding-top: 12px;
     text-align: center;
 }
 
-.main-menu ul li{
+.main-menu ul li {
     display: inline-block;
     position: relative;
-    
 }
 
 .main-menu ul li a {
@@ -104,6 +112,7 @@ ul {
     cursor: pointer;
     color: #ff9601;
 }
+
 .main-menu ul li a:hover {
     color: #ff9601;
 }
@@ -111,20 +120,23 @@ ul {
 .main-menu ul li:hover .sub-menu {
     display: block;
 }
-
+.main-menu ul li:hover .sub-menu {
+    display: block;
+}
 .main-menu ul li a i {
     padding: 0 0 0 5px;
     position: relative;
     bottom: 3px;
 }
 
-.main-menu ul li .sub-menu{
+.main-menu ul li .sub-menu {
     position: absolute;
     background: rgb(255, 255, 255);
+    z-index: 10;
 }
 
-.main-menu .active a{
-    color:#ff9601;
+.main-menu .active a {
+    color: #ff9601;
 }
 
 /* Sub menu  */
@@ -154,17 +166,26 @@ ul {
 .sub-menu ul li a:hover {
     background: none;
     color: #ff9601;
-    
 }
 
-
+.opacity-screen{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.53);
+    z-index: 998;
+    display: none;
+}
 
 /* CONTENT */
+
+
 
 .content {
     margin-top: 50px;
 }
-
 
 .book-item img {
     max-width: 100%;
@@ -176,13 +197,16 @@ ul {
 }
 
 .domestic-books .box-title {
-    background: #9FD16D;
+    background: #f57224;
 }
 
 .suggest-list ul li {
     display: inline-block;
 }
 
+.box-title {
+    padding: .7rem 20px;
+}
 .box-title .title {
     font-weight: 550;
     font-size: 16px;
@@ -194,17 +218,55 @@ ul {
 .suggest-list ul li a {
     display: inline-block;
     background: #fff;
-    padding: 4px 15px;
+    padding: 5px 15px;
     margin-left: 10px;
-    color: #666;
+    color: #333;
     border-radius: 15px;
     box-shadow: 0 0 1px rgb(0 0 0 / 8%);
     text-decoration: none;
+    font-size: 12px;
+    line-height: 1.5;
+    transition: .3s ease-out;
 }
 
+.suggest-list ul li a:hover{
+    background: #d70018;
+    color: #fff;
+}
 
+.book-item {
+    transition: 0.3s;
+}
+.book-item:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.11);
+}
 
+.book-image {
+    padding: 30px 15px 15px 15px;
+}
+.book-info {
+    padding-bottom: 20px;
+    padding: 0px 5px 20px 5px;
+}
 
-
-
-
+.book-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #222;
+    /* overflow: hidden; */
+    margin-bottom: 4px;
+    line-height: 1.5;
+}
+.new-price {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ff9601;
+    display: inline-block;
+    margin-right: 3px;
+}
+.old-price {
+    font-size: 12px;
+    color: #716b6b;
+    text-decoration: line-through;
+    display: inline-block;
+}
