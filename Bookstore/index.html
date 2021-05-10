@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="OwlCarousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="OwlCarousel/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -84,93 +86,401 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
         <div class="opacity-screen"></div>
-        <div class="content">
-            
-            <div class="domestic-books container shadow-sm section mb-5">
-                <div class="row">
-                    <div class="box-title col-xl-12 col-md-12 col-sm-12 d-flex justify-content-between align-items-center">
-                        <div class="title">Sách trong nước</div>
+        <div class="main-container">
+            <!-- ------- owl-carousel flash sale books ---------  -->
+            <div class="gray-bg">
+                <div class="flashsale-books shadow-sm section-box ">
+                    <div class="title-box col-xl-12 col-md-12 col-sm-12 d-flex justify-content-between align-items-center">
+                        <div class="title">Flash sale</div>
                         <div class="suggest-list">
                             <ul>
-                                <li><a href="">Văn học</a></li>
-                                <li><a href="">Kinh tế</a></li>
+                                <li class="countdown">Kết Thúc Trong 
+                                    <span class="day">02 </span>
+                                    <span class="colon">:</span>
+                                    <span class="hour">03 </span>
+                                    <span class="colon">:</span>
+                                    <span class="minute">00</span>
+                                    <span class="colon">:</span>
+                                    <span class="second">59</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content-box book-list owl-carousel">
+                        <div class="book-item" id="test">
+                            <div class="book-image">
+                                <img src="images/domestic-books/Để Con Được Ốm -76-95-20.jpg" alt="">
+                            </div>
+                            <div class="book-info">
+                                <div class="book-title">Để con được ốm</div>
+                                <div class="new-price">69.700đ</div>
+                                <div class="old-price">85.000đ</div>
+                                <div class="rating-box">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="far fa-star"></i>
+                                    &nbsp;5&nbsp;đánh giá
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-item">
+                            <div class="book-image">
+                                <img src="images/domestic-books/Khi hơi thở hóa thinh không - 87-109-20.jpg" alt="">
+                            </div>
+                            <div class="book-info">
+                                <div class="book-title">Khi hơi thở hóa thinh không</div>
+                                <div class="new-price">87.000đ</div>
+                                <div class="old-price">109.000đ</div>
+                                <div class="rating-box">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="far fa-star"></i>
+                                    &nbsp;10&nbsp;đánh giá
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-item">
+                            <div class="book-image">
+                                <img src="images/domestic-books/Cho Tôi Xin Một Vé Đi Tuổi Thơ -64-80-20.jpg" alt="">
+                            </div>
+                            <div class="book-info">
+                                <div class="book-title">Cho Tôi Xin Một Vé Đi Tuổi Thơ</div>
+                                <div class="new-price">64.000đ</div>
+                                <div class="rating-box">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    &nbsp;20&nbsp;đánh giá
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-item">
+                            <div class="book-image">
+                                <img src="images/domestic-books/Con Về Không Phải Bởi Phép Màu - 57-72-20.jpg" alt="">
+                            </div>
+                            <div class="book-info">
+                                <div class="book-title">Con Về Không Phải Bởi Phép</div>
+                                <div class="new-price">57.500đ</div>
+                                <div class="old-price">72.000đ</div>
+                                <div class="rating-box">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    &nbsp;6&nbsp;đánh giá
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-item">
+                            <div class="book-image">
+                                <img src="images/domestic-books/Rèn luyện tư duy phản biện - 77-99-22.jpg" alt="">
+                            </div>
+                            <div class="book-info">
+                                <div class="book-title">Rèn luyện tư duy phản biện</div>
+                                <div class="new-price">77.000đ</div>
+                                <div class="rating-box">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    &nbsp;18&nbsp;đánh giá
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-item">
+                            <div class="book-image">
+                                <img src="images/domestic-books/Rèn luyện tư duy phản biện - 77-99-22.jpg" alt="">
+                            </div>
+                            <div class="book-info">
+                                <div class="book-title">Rèn luyện tư duy phản biện</div>
+                                <div class="new-price">77.000đ</div>
+                                <div class="rating-box">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    &nbsp;18&nbsp;đánh giá
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- ------- owl-carousel old books ---------  -->
+            <div class="gray-bg">
+                <div class="old-books shadow-sm section-box">
+                    <div class="title-box col-xl-12 col-md-12 col-sm-12 d-flex justify-content-between align-items-center">
+                        <div class="title">Phiên chợ sách cũ</div>
+                        <div class="suggest-list">
+                            <ul>
                                 <li><a href="">Xem tất cả</a></li>
                             </ul>
                         </div>
                     </div>
-                </div>
-
-                <div class="box-content book-list row">
-                    <div class="book-item col">
-                        <div class="book-image">
-                            <img src="images/domestic-books/Để Con Được Ốm -76-95-20.jpg" alt="">
+                    <div class="content-box book-list owl-carousel">
+                        <div class="book-item" id="test">
+                            <div class="book-image">
+                                <img src="images/domestic-books/Để Con Được Ốm -76-95-20.jpg" alt="">
+                            </div>
+                            <div class="book-info">
+                                <div class="book-title">Để con được ốm</div>
+                                <div class="new-price">69.700đ</div>
+                                <div class="old-price">85.000đ</div>
+                                <div class="rating-box">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="far fa-star"></i>
+                                    &nbsp;5&nbsp;đánh giá
+                                </div>
+                            </div>
                         </div>
-                        <div class="book-info">
-                            <div class="book-title">Để con được ốm</div>
-                            <div class="new-price">69.700đ</div>
-                            <div class="old-price">85.000đ</div>
+                        <div class="book-item">
+                            <div class="book-image">
+                                <img src="images/domestic-books/Khi hơi thở hóa thinh không - 87-109-20.jpg" alt="">
+                            </div>
+                            <div class="book-info">
+                                <div class="book-title">Khi hơi thở hóa thinh không</div>
+                                <div class="new-price">87.000đ</div>
+                                <div class="old-price">109.000đ</div>
+                                <div class="rating-box">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="far fa-star"></i>
+                                    &nbsp;10&nbsp;đánh giá
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-item">
+                            <div class="book-image">
+                                <img src="images/domestic-books/Cho Tôi Xin Một Vé Đi Tuổi Thơ -64-80-20.jpg" alt="">
+                            </div>
+                            <div class="book-info">
+                                <div class="book-title">Cho Tôi Xin Một Vé Đi Tuổi Thơ</div>
+                                <div class="new-price">64.000đ</div>
+                                <div class="rating-box">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    &nbsp;20&nbsp;đánh giá
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-item">
+                            <div class="book-image">
+                                <img src="images/domestic-books/Con Về Không Phải Bởi Phép Màu - 57-72-20.jpg" alt="">
+                            </div>
+                            <div class="book-info">
+                                <div class="book-title">Con Về Không Phải Bởi Phép</div>
+                                <div class="new-price">57.500đ</div>
+                                <div class="old-price">72.000đ</div>
+                                <div class="rating-box">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    &nbsp;6&nbsp;đánh giá
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-item">
+                            <div class="book-image">
+                                <img src="images/domestic-books/Rèn luyện tư duy phản biện - 77-99-22.jpg" alt="">
+                            </div>
+                            <div class="book-info">
+                                <div class="book-title">Rèn luyện tư duy phản biện</div>
+                                <div class="new-price">77.000đ</div>
+                                <div class="rating-box">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    &nbsp;18&nbsp;đánh giá
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-item">
+                            <div class="book-image">
+                                <img src="images/domestic-books/Rèn luyện tư duy phản biện - 77-99-22.jpg" alt="">
+                            </div>
+                            <div class="book-info">
+                                <div class="book-title">Rèn luyện tư duy phản biện</div>
+                                <div class="new-price">77.000đ</div>
+                                <div class="rating-box">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    &nbsp;18&nbsp;đánh giá
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="book-item col">
-                        <div class="book-image">
-                            <img src="images/domestic-books/Khi hơi thở hóa thinh không - 87-109-20.jpg" alt="">
-                        </div>
-                        <div class="book-info">
-                            <div class="book-title">Khi hơi thở hóa thinh không</div>
-                            <div class="new-price">87.000đ</div>
-                            <div class="old-price">109.000đ</div>
-                        </div>
-                    </div>
-                    <div class="book-item col">
-                        <div class="book-image">
-                            <img src="images/domestic-books/Cho Tôi Xin Một Vé Đi Tuổi Thơ -64-80-20.jpg" alt="">
-                        </div>
-                        <div class="book-info">
-                            <div class="book-title">Cho Tôi Xin Một Vé Đi Tuổi Thơ</div>
-                            <div class="new-price">64.000đ</div>
-                        </div>
-                    </div>
-                    <div class="book-item col">
-                        <div class="book-image">
-                            <img src="images/domestic-books/Con Về Không Phải Bởi Phép Màu - 57-72-20.jpg" alt="">
-                        </div>
-                        <div class="book-info">
-                            <div class="book-title">Con Về Không Phải Bởi Phép Màu</div>
-                            <div class="new-price">57.500đ</div>
-                            <div class="old-price">72.000đ</div>
-                        </div>
-                    </div>
-                    <div class="book-item col">
-                        <div class="book-image">
-                            <img src="images/domestic-books/Rèn luyện tư duy phản biện - 77-99-22.jpg" alt="">
-                        </div>
-                        <div class="book-info">
-                            <div class="book-title">Rèn luyện tư duy phản biện</div>
-                            <div class="new-price">77.000đ</div>
-                        </div>
-                    </div>
-                    
-                    
-                    
                 </div>
             </div>
-            
+        
+            <div class="quote-box">
+                <div class="quote-content">
+                    Sự đọc sách đối với trí tuệ giống như sự vận động đối với cơ thể.
+                </div>
+            </div>
+
+            <!-- ------- owl-carousel best sell ---------  -->
+            <div class="gray-bg">
+                <div class="bestseller-bg"></div>
+                <div class="bestseller-books">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="bestseller-item">
+                                <div class="book-image">
+                                    <img src="images/bestseller/Khởi nghiệp 4.0 - 108-139-22.jpg" alt="">
+                                </div>
+                                <div class="book-info">
+                                    <div class="book-title">Khởi nghiệp 4.0</div>
+                                    <div class="new-price">108.000đ</div>
+                                    <div class="rating-box">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        &nbsp;18&nbsp;đánh giá
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="bestseller-item">
+                                <div class="book-image">
+                                    <img src="images/bestseller/Năng lực tìm kiếm -72-91-20.jpg" alt="">
+                                </div>
+                                <div class="book-info">
+                                    <div class="book-title">Năng lực tìm kiếm</div>
+                                    <div class="new-price">91.000đ</div>
+                                    <div class="rating-box">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        &nbsp;18&nbsp;đánh giá
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="bestseller-item">
+                                <div class="book-image">
+                                    <img src="images/bestseller/Siêu trí nhớ -74-99-25.jpg" alt="">
+                                </div>
+                                <div class="book-info">
+                                    <div class="book-title">Siêu trí nhớ </div>
+                                    <div class="new-price">74.000đ</div>
+                                    <div class="rating-box">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        &nbsp;18&nbsp;đánh giá
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- ----------------------- review sách --------------------------- -->
+            <div class="light-blue-bg">
+                <div class="review-books">
+                    <div class="title-box col-xl-12 col-md-12 col-sm-12 d-flex justify-content-between align-items-center">
+                        <div class="title">Review sách</div>
+                    </div>
+                    <div class="review-box">
+                        <div class="review-thumbnail">
+                            <img src="images/Steve Jobs - Mọi Thứ Đều Có Thể -40-50-20.jpg" alt="">
+                        </div>
+                        <div class="review-info">
+                            <h1 class="review-title">Steve Jobs: Mọi thứ đều có thể</h1>
+                            <div class="author-box">
+                                <span>Tác giả:</span>
+                                <span class="author-name">Trương Vệ Cần</span>
+                            </div>
+                            <div class="review-desc">
+                                <p>
+                                    Cuốn sách Steve Jobs - Mọi Thứ Đều Có Thể sẽ mang đến cho bạn những trải nghiệm mới mẻ, bài học quý báu qua hành trình cuộc đời cũng như những năm tháng sự nghiệp của Steve Jobs, qua đó giúp bạn khám phá câu chuyện thành công thần kỳ của hãng Apple mà Steve Jobs là biểu tượng tiêu biểu cho sự thành công ấy.
+                                </p>
+                                <p>
+                                    Cuốn sách Steve Jobs - Mọi Thứ Đều Có Thể sẽ mang đến cho bạn những trải nghiệm mới mẻ, bài học quý báu qua hành trình cuộc đời cũng như những năm tháng sự nghiệp của Steve Jobs, qua đó giúp bạn khám phá câu chuyện thành công thần kỳ của hãng Apple mà Steve Jobs là biểu tượng tiêu biểu cho sự thành công ấy.
+                                </p>
+                            </div>
+                            <div>
+                                <a href="" class="review-read-more">Đọc tiếp</a>
+                            </div>
+                        </div>
+                        <div class="review-scores">
+                            <div class="scores-bg">
+                                <div class="scores">9.5</div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="footer"></div>
+        <div class="footer">
+            <div class="footer-top">
+                <ul>
+                    <li><a href="">Về chúng tôi</a></li>
+                    <li><a href="">Lần đầu đến đây</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Facebook</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <ul>
+                    <li><a href="">Điều khoản</a></li>
+                    <li><a href="">Chính sách</a></li>
+                </ul>
+                
+            </div>
+        </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+    <script src="OwlCarousel/js/owl.carousel.min.js"></script>
     <script src="main.js"></script>
 </body>
 
