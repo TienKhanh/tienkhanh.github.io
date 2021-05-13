@@ -9,7 +9,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
-    background-image: url("images/quote-wall/quote-wall-13.jpg");
+    background-image: url("images/background/bg-wallpaper-1.jpg");
     background-size: cover;
     background-attachment: fixed;
 }
@@ -24,10 +24,14 @@ ul {
     background: #f8f8f8;
     padding-top: 80px;
 }
-
-.gray-bg:nth-child(2) {
+.gray-bg:nth-child(1){
+    padding-top: 20px;
+}
+.gray-bg:nth-child(3){
     padding-bottom: 80px;
 }
+
+
 
 .section-box {
     max-width: 1120px;
@@ -194,6 +198,18 @@ ul {
 
 /* CONTENT */
 
+/* Slider  */
+
+.main-slider img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* End slider  */
+
+
+
 .book-item img {
     max-width: 100%;
 }
@@ -272,7 +288,7 @@ ul {
     padding: 0px 5px 20px 5px;
 }
 
-.book-title {
+.book-title h3{
     font-size: 14px;
     font-weight: 700;
     color: #222;
@@ -392,6 +408,7 @@ ul {
     margin: 0 auto;
     text-align: center;
     padding: 0 125px;
+
 }
 .bestseller-item {
     background: #fff;
@@ -581,11 +598,11 @@ ul {
 }
 
 .domestic-book {
-    background-image: url("images/h1-banner-01.jpg");
+    background-image: url("images/see-list/banner-01.jpg");
 }
 
 .foreign-book {
-    background-image: url("images/h1-banner-02.jpg");
+    background-image: url("images/see-list/banner-02.jpg");
 }
 
 .see-list .info {
@@ -620,4 +637,17 @@ ul {
     background: #34495e;
     color: #fff;
     
+}
+
+.release-box {
+    background: #00cec9;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.release-title-box {
+    flex: 1;
+}
+.release-list-box {
+    width: 875px;
 }
