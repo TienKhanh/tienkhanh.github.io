@@ -17,6 +17,11 @@ body {
     padding-bottom: 80px;
 }
 
+.support-box {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
 .section-box {
     max-width: 1120px;
     margin: 0 auto;
@@ -36,12 +41,6 @@ body {
 }
 
 /* End slider  */
-
-
-
-.book-item img {
-    max-width: 100%;
-}
 
 .section {
     background: #FFF;
@@ -94,59 +93,6 @@ body {
 .suggest-list ul li a:hover {
     background: #d70018;
     color: #fff;
-}
-
-.book-item {
-    transition: 0.3s;
-}
-
-.book-item:hover {
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
-}
-
-.book-image {
-    padding: 30px 15px 15px 15px;
-}
-
-.book-image img {
-    max-width: 100%;
-}
-
-.book-info {
-    padding-bottom: 20px;
-    padding: 0px 5px 20px 5px;
-}
-
-.book-title h3{
-    font-size: 14px;
-    font-weight: 700;
-    color: #222;
-    margin-bottom: 3px;
-    line-height: 1.5;
-}
-
-.new-price {
-    font-size: 18px;
-    font-weight: 700;
-    color: #ff9601;
-    display: inline-block;
-    margin-right: 3px;
-}
-
-.old-price {
-    font-size: 12px;
-    color: #716b6b;
-    text-decoration: line-through;
-    display: inline-block;
-}
-
-.rating-box {
-    margin-top: 3px;
-    font-size: 12px;
-}
-
-.rating-box i {
-    color: #f1c40f;
 }
 
 /* owl-carousel  */

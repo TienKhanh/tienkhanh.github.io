@@ -2,9 +2,14 @@
     background: #eeeeee;
 }
 
+
+/* BREADCRUMB  */
+
 .breadcrumb {
     background: #fff;
 }
+
+/* SIDEBAR  */
 
 .sidebar-item {
     background: #fff;
@@ -41,7 +46,112 @@
     border: 1px solid #ccc;
     background-color: transparent;
     border-radius: 2px;
+    position: relative;
+    top: 2px;
+    margin-right: 3px;
 }
-.sidebar-content span a:hover {
+
+.sidebar-content span:hover a {
     color: #f26a19;
 }
+
+/* CATEGORY CONTENT  */
+.category-content {
+    background: #fff;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+    padding: 0!important;
+}
+
+/* CATEGORY NAME  */
+
+.category-name {
+    font-size: 24px;
+    padding: 10px 0;
+    font-weight: 600;
+    margin: 0;
+    padding-left: 1rem;
+    color: #121212;
+}
+
+/* CATEGORY SLIDEBAR  */
+
+.category-slidebar {
+    padding-right: -15px;
+    padding-left: -15px;
+}
+.category-slidebar img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* SORT LIST  */
+.sort-list {
+    margin-top: 15px;
+    border-bottom: 1px solid #eeeeee;
+}
+.sort-list li {
+    display: inline-block;
+}
+
+.sort-list li a {
+    display: inline-block;
+    padding: 8px 0px;
+    margin-left: 25px;
+    color: #121212;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.sort-list li a:hover {
+    color: #f26a19;
+}
+.sort-list li a.active {
+    color: #f26a19;
+    font-weight: 600;
+    border-bottom: 2px solid #f26a19;
+}
+
+/* CATEGORY PRODUCT LIST  */
+.product-list {
+    padding-bottom: 10px;
+}
+.product-list .book-item {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* PAGINATION  */
+
+.nav-pagination {
+    margin-bottom: 10px;
+}
+.pagination .page-item {
+    margin-left: 15px;
+    
+}
+
+.pagination .page-item .page-link {
+    border-radius: 4px;
+    color: #121212;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 20%);
+    
+}
+
+.pagination .page-item .page-link i {
+    font-size: 11px;
+}
+
+.pagination .page-item .page-link:hover {
+    color: #f26a19;
+    border:1px solid #f26a19;
+    background: #fff;
+}
+
+.pagination .page-item.current .page-link {
+    color: #fff;
+    background: #f26a19;
+}
+
+
+
