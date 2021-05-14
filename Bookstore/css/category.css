@@ -1,0 +1,47 @@
+.main-container {
+    background: #eeeeee;
+}
+
+.breadcrumb {
+    background: #fff;
+}
+
+.sidebar-item {
+    background: #fff;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+.sidebar-header {
+    border-bottom: 1px solid #eeeeee;
+    padding: 1rem;
+}
+.sidebar-header h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+.sidebar-content {
+    padding: 1rem;
+}
+.sidebar-content span {
+    display: block;
+}
+.sidebar-content span a {
+    display: inline-block;
+    padding-bottom: 0.6rem;
+    color: #121212;
+    text-decoration: none;
+}
+.sidebar-content span:before {
+    display: inline-block;
+    cursor: pointer;
+    content: " ";
+    width: 17px;
+    height: 17px;
+    border: 1px solid #ccc;
+    background-color: transparent;
+    border-radius: 2px;
+}
+.sidebar-content span a:hover {
+    color: #f26a19;
+}
