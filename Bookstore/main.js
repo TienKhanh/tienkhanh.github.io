@@ -45,8 +45,8 @@ $(document).ready(function(){
         autoplayHoverPause:true,
     });
 
-    var old_book_item_max_height = $(".old-books .owl-stage-outer").height(); 
-    console.log(old_book_item_max_height);
-    $(".book-item").innerHeight(old_book_item_max_height);
+    var book_item_max_height = $(".owl-stage-outer").height(); 
+    console.log(book_item_max_height);
+    $(".book-item").innerHeight(book_item_max_height);
 
 });

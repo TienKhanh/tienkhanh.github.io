@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookstore</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="OwlCarousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="OwlCarousel/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/category.css">
+
+
+</head>
+
+<body>
+    <div id="main">
+        <div class="header">
+
+            <div class="header-top container">
+                <!-- <div class="quote">
+                        ~~~ Mỗi cuốn sách là một bức tranh kỳ diệu về cuộc sống ~~~
+                        
+                    </div> -->
+                <div class="top-item">
+                    <ul>
+                        <li><a href="">Đăng nhập</a></li>
+                        <li><a href="">Về Bookstore</a></li>
+                        <li><a href="">Hỗ trợ</a></li>
+                        <li>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                            <a href=""><i class="far fa-envelope"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div id="header-bottom">
+                <div class="container">
+                    <div id="logo">
+                        <img src="images/logo/Logo-white-bg.png" alt="" width="180px">
+                    </div>
+                    <div class="main-menu">
+                        <ul>
+                            <li class="active"><a href="index.html">Trang chủ</a></li>
+                            <li class="book-category">
+                                <a href="category.html">Sách trong nước<i class="fas fa-sort-down"></i></a>
+                                <div class="sub-menu">
+                                    <ul>
+                                        <li><a href="">Văn học</a></li>
+                                        <li><a href="">Kinh tế</a></li>
+                                        <li><a href="">Tâm lý - Kỹ năng sống</a></li>
+                                        <li><a href="">Nuôi dạy con</a></li>
+                                        <li><a href="">Sách thiếu nhi</a></li>
+                                        <li><a href="">Tiểu sử - Hồi ký</a></li>
+                                        <li><a href="">Văn học</a></li>
+                                        <li><a href="">Sách học ngoại ngữ</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="book-category">
+                                <a href="">Sách nước ngoài<i class="fas fa-sort-down"></i></a>
+                                <div class="sub-menu">
+                                    <ul>
+                                        <li><a href="">Fiction</a></li>
+                                        <li><a href="">Business & management</a></li>
+                                        <li><a href="">Personal development</a></li>
+                                        <li><a href="">Children's books</a></li>
+                                        <li><a href="">Dictionaries</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="">Sách bán chạy</a></li>
+                            <li><a href="">Phiên chợ cũ</a></li>
+                            <li><a href="">Review sách</a></li>
+                            <li><i class="fas fa-search"></i></li>
+                            <!-- <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>     -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="opacity-screen"></div>
+        <div class="main-container">
+            <!-- --------------------- book-detail ----------------------------  -->
+            <div class="detail-book-container container">
+                <div class="breadcrumb-box pt-3">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+                            <li class="breadcrumb-item"><a href="#">Sách tâm lý - kỹ năng sống</a></li>
+                            <li class="breadcrumb-item active">Không còn đường lùi mới có thành công</li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="detail-book row">
+                    <div class="image-book-detail col-5">
+                        <img src="images/list-books/không còn đường lùi mới có thành công.jpg" alt="">
+                    </div>
+                    <div class="content-book-detail col-7">
+                        <div class="book-title">
+                            <h1>Không còn đường lùi mới có thành công</h1>
+                        </div>
+                        <div class="rating-box">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="far fa-star"></i>
+                            &nbsp;5&nbsp;đánh giá
+                        </div>
+                        <div class="detail-support">
+                            <div class="shipping">Miễn phí vận chuyển cho đơn hàng từ 200k trong Hà Nội và từ 250k tại các khu vực khác. <a href="">Xem chi tiết</a></div>
+                            <div class="hot-line">Hotline: 0987 889 988</div>
+                            <div class="support-email">Email: support.vnbookteam@gmail.com</div>
+                        </div>
+                        <div class="price-box">
+                            <div class="card-price">Giá bìa: <span class="old-price">92.000đ</span></div>
+                            <div class="card-price">Giá bán: <span class="new-price">73.6.000đ</span></div>
+                        </div>
+                        <div class="quantity">
+                            Số lượng:
+                            <input type="button" value="-" class="minus">
+                            <input type="number" class="input-quantity" step="1" min="1" max="100" value="1">
+                            <input type="button" value="+" class="plus">
+                        </div>
+                        <div class="buy-cart">
+                            <button class="add-to-cart">Thêm vào giỏ hàng</button>
+                            <button class="buy-now">Mua ngay</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="book-related">
+                    <div class="related-books shadow-sm section-box">
+                        <div
+                            class="title-box col-xl-12 col-md-12 col-sm-12 d-flex justify-content-between align-items-center">
+                            <div class="title">Phiên chợ sách cũ</div>
+                            <div class="suggest-list">
+                                <ul>
+                                    <li><a href="">Xem tất cả</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="book-list-box owl-carousel">
+                            <div class="book-item">
+                                <div class="book-image">
+                                    <img src="images/list-books/Hoàng Tử Bé -22.5-25-10.jpg" alt="">
+                                </div>
+                                <div class="book-info">
+                                    <div class="book-title">Hoàng Tử Bé</div>
+                                    <div class="new-price">22.500đ</div>
+                                    <div class="old-price">25.000đ</div>
+                                    <div class="rating-box">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <i class="far fa-star"></i>
+                                        &nbsp;5&nbsp;đánh giá
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="book-item">
+                                <div class="book-image">
+                                    <img src="images/list-books/Cà Phê Cùng Tony -63-90-30.jpg" alt="">
+                                </div>
+                                <div class="book-info">
+                                    <div class="book-title">Cà Phê Cùng Tony</div>
+                                    <div class="new-price">63.000đ</div>
+                                    <div class="old-price">90.000đ</div>
+                                    <div class="rating-box">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <i class="far fa-star"></i>
+                                        &nbsp;10&nbsp;đánh giá
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="book-item">
+                                <div class="book-image">
+                                    <img src="images/list-books/Món Quà Từ Cánh Chim -82.5-165-50.png" alt="">
+                                </div>
+                                <div class="book-info">
+                                    <div class="book-title">Món Quà Từ Cánh Chim</div>
+                                    <div class="new-price">82.5000đ</div>
+                                    <div class="old-price">165.000đ</div>
+                                    <div class="rating-box">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        &nbsp;20&nbsp;đánh giá
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="book-item">
+                                <div class="book-image">
+                                    <img src="images/list-books/Kiếp Nào Ta Cũng Tìm Thấy Nhau -62-85-27.jpg" alt="">
+                                </div>
+                                <div class="book-info">
+                                    <div class="book-title">Kiếp Nào Ta Cũng Tìm Thấy Nhau</div>
+                                    <div class="new-price">62.000đ</div>
+                                    <div class="old-price">85.000đ</div>
+                                    <div class="rating-box">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        &nbsp;6&nbsp;đánh giá
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="book-item">
+                                <div class="book-image">
+                                    <img src="images/list-books/Cái Bóng Của Bí Mật - 54-108-50.jpg" alt="">
+                                </div>
+                                <div class="book-info">
+                                    <div class="book-title">Cái Bóng Của Bí Mật</div>
+                                    <div class="new-price">54.000đ</div>
+                                    <div class="old-price">108.000đ</div>
+                                    <div class="rating-box">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        &nbsp;18&nbsp;đánh giá
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="book-item">
+                                <div class="book-image">
+                                    <img src="images/list-books/Đời Ngắn Đừng Ngủ Dài - 57-75-24.jpg" alt="">
+                                </div>
+                                <div class="book-info">
+                                    <div class="book-title">Đời Ngắn Đừng Ngủ Dài</div>
+                                    <div class="new-price">57.000đ</div>
+                                    <div class="old-price">75.000đ</div>
+                                    <div class="rating-box">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        &nbsp;18&nbsp;đánh giá
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="book-item">
+                                <div class="book-image">
+                                    <img src="images/list-books/Phẩm Chất Tốt Của Các Doanh Nhân -23.5-47.50.jpg" alt="">
+                                </div>
+                                <div class="book-info">
+                                    <div class="book-title">Phẩm Chất Tốt Của Các Doanh Nhân</div>
+                                    <div class="new-price">23.500đ</div>
+                                    <div class="old-price">47.000đ</div>
+                                    <div class="rating-box">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        &nbsp;18&nbsp;đánh giá
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="desc-detail">
+                    2
+                </div>
+                <div class="book-attribute">
+                    3
+                </div>
+                <div class="book-rate">
+                    4
+                </div>
+                
+            </div>
+
+        </div>
+        <div class="footer">
+            <div class="footer-top">
+                <ul>
+                    <li><a href="">Về chúng tôi</a></li>
+                    <li><a href="">Lần đầu đến đây</a></li>
+                    <li>
+                        <a href="">
+                            <img src="images/logo/Logo-black-bg.png" alt="" width="150px">
+                        </a>
+                    </li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Facebook</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <ul>
+                    <li><a href="">Điều khoản</a></li>
+                    <li><a href="">Chính sách</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+    <script src="OwlCarousel/js/owl.carousel.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

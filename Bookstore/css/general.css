@@ -13,6 +13,9 @@ ul {
     list-style-type: none;
     margin: 0;
 }
+a {
+    text-decoration: none!important;
+}
 
 /* HEADER  */
 
@@ -269,4 +272,56 @@ ul {
 
 .rating-box i {
     color: #f1c40f;
+}
+
+/* OWL CAROUSEL PREV NEXT BUTTON  */
+
+.owl-prev, .owl-next {
+    width: 30px;
+    height: 60px;
+    position: absolute;
+    background: #fff;
+    color: #707070;
+    position: absolute;
+    top: 40%;
+    outline: none;
+    z-index: 10;
+    box-shadow: 0 0 4px 0 rgb(0 0 0 / 30%);
+    opacity: .9;
+    cursor: pointer;
+    outline: none!important;
+    transition: 0.3s;
+}
+
+.owl-prev:hover, .owl-next:hover {
+    box-shadow: 0 0 4px 0 rgb(0 0 0 / 80%);
+}
+
+.section-box .owl-carousel .owl-nav .owl-prev {
+    /* border-radius: 0 100px 100px 0; */
+    left: 0;
+    /* padding-right: 10px!important; */
+}
+
+.section-box .owl-carousel .owl-nav .owl-next {
+    /* border-radius: 100px 0px 0px 100px; */
+    right: 0;
+    /* padding-left: 10px!important; */
+}
+
+.owl-prev.disabled, .owl-next.disabled {
+    display: none;
+}
+
+.owl-dots {
+    display: none;
+}
+
+/* SECTION BOX  */
+
+.section-box {
+
+    background: #fff;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
 }
