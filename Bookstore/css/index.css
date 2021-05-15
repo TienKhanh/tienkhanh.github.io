@@ -16,19 +16,10 @@ body {
 .gray-bg:nth-child(4){
     padding-bottom: 80px;
 }
-.section-box {
 
-    background: #fff;
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
-    border-radius: 3px;
-}
 
 /* SUPPORT  */
 
-.support-box {
-    max-width: 1120px;
-    margin: 0 auto;
-}
 .support-item {
     flex-basis: 23%;
     color: #121212;
@@ -84,11 +75,6 @@ body {
 }
 
 /* End slider  */
-
-.section {
-    background: #FFF;
-    margin-top: 50px;
-}
 
 .review-books .title-box {
     background: #16445E;
@@ -174,11 +160,8 @@ body {
 /* BESTSELLER  */
 
 .bestseller-books {
-    max-width: 1120px;
-    margin: 0 auto;
     text-align: center;
     padding: 0 125px;
-
 }
 .bestseller-item {
     background: #fff;
@@ -211,11 +194,6 @@ body {
 .light-blue-bg {
     background: #DEFBFD;
     padding: 60px 0;
-}
-
-.review-books {
-    max-width: 1120px;
-    margin: 0 auto;
 }
 
 .review-books .title-box .title {
@@ -311,8 +289,6 @@ body {
 }
 
 .see-list {
-    max-width: 1120px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     padding-bottom: 80px;
