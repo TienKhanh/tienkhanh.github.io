@@ -3,63 +3,11 @@
 }
 
 .checkcart-container {
-    padding-top: 20px;
+    padding: 20px 0 60px 0;
 }
 
-/* progressbar  */
 
-.progressbar-box {
-    padding: 20px 0;
-    margin-bottom: 20px;
-}
-.progressbar {
-    display: flex;
-    counter-reset: step;
-}
-.progressbar li {
-    width: 33.3%;
-    position: relative;
-    text-align: center;
-}
-.progressbar li:before {
-    content: counter(step);
-    counter-increment: step;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #ddd;
-    display: block;
-    text-align: center;
-    line-height: 30px;
-    margin: 0 auto 10px auto;
-    border-radius: 50%;
-    background-color: #fff;
-    position: relative;
-    z-index: 2;
- 
-}
-.progressbar li:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    background: #ddd;
-    top: 15px;
-    left: -50%;
-    z-index: 1;
-}
 
-.progressbar li:first-child:after {
-    content: none;
-}
-
-.progressbar li.active {
-    color: #ff6500;
-}
-.progressbar li.active:before {
-    background: #ff6500;
-    color: #fff;
-    border: #ff6500;
-}
 .cart-shadow {
     box-shadow: 0 0 4px 0 rgb(0 0 0 / 15%);
     margin: 20px 0;
@@ -75,7 +23,7 @@
 }
 
 .product-image {
-    flex-basis: 15%;
+    flex-basis: 13%;
     min-width: 78px;
 }
 
@@ -83,7 +31,7 @@
     max-width: 100%;
 }
 .product-info {
-    flex-basis: 30%;
+    flex-basis: 38%;
 }
 .number-cart {
     flex-basis: 20%;
@@ -131,10 +79,11 @@
     padding: 15px;
 }
 
-.coupon-header {
+.coupon-header, .item {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    align-items: center;
 }
 .coupon-desc {
     font-size: 13px;
@@ -142,11 +91,40 @@
 }
 
 .coupon-select {
-    color: #3498db;
-    text-decoration: underline;
+    color: #2980b9;
 }
 
+.price-page {
+    border-bottom: 1px solid #ddd;
+}
 
+.price-total-page {
+    margin-top: 15px;
+}
 
+.price-page .item-price {
+    font-weight: bold;
+}
 
+.price-total-page .item .item-price {
+    font-weight: bold;
+    color: #FC4B4B;
+    font-size: 22px;
+}
 
+.price-total-page .item {
+    margin-bottom: 0;
+}
+.btn_next {
+    background: #FC4B4B;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 3px;
+    border: none;
+    width: 100%;
+    margin-right: 20px;
+    outline: none;
+}
+.cart-right:last-child {
+    padding: 0;
+}
