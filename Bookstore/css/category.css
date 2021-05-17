@@ -3,12 +3,6 @@
 }
 
 
-/* BREADCRUMB  */
-
-.breadcrumb {
-    background: #fff;
-}
-
 /* SIDEBAR  */
 
 .sidebar-item {
@@ -135,7 +129,6 @@
     border-radius: 4px;
     color: #121212;
     box-shadow: 0 1px 3px 0 rgb(0 0 0 / 20%);
-    
 }
 
 .pagination .page-item .page-link i {

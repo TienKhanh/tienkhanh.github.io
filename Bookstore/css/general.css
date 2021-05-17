@@ -325,3 +325,67 @@ a {
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
     border-radius: 3px;
 }
+
+
+/* section header title  */
+.section-header {
+    min-height: 50px;
+    padding: .5rem .9em .7em 1.7em;
+    border-radius: 3px 3px 0 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.section-header .section-title {
+    font-weight: 550;
+    font-size: 16px;
+    color: #121212;
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+
+.section-tag ul li {
+    display: inline-block;
+}
+
+.section-tag ul li a {
+    display: inline-block;
+    background: #eeeeee;
+    padding: 5px 15px;
+    margin-left: 10px;
+    color: #333;
+    border-radius: 15px;
+    box-shadow: 0 0 1px rgb(0 0 0 / 8%);
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 1.5;
+    transition: .3s ease-out;
+}
+
+.section-tag ul li a:hover {
+    background: #f26a19;
+    color: #fff;
+}
+
+
+/* BREADCRUMB  */
+.breadcrumb {
+    margin-bottom: 0;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    display: inline-block;
+    padding-right: .5rem;
+    color: #999;
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f054";
+    font-size: 11px;
+}
+.breadcrumb-item a {
+    color: #999;
+}
+.breadcrumb-item.active {
+    color: #333;
+}
+.breadcrumb-item:hover a {
+    color: #333;
+}

@@ -76,46 +76,11 @@ body {
 
 /* End slider  */
 
-.review-books .title-box {
+.review-books .section-header {
     background: #16445E;
 }
 
-.suggest-list ul li {
-    display: inline-block;
-}
 
-.title-box {
-    padding: .5rem .9em;
-    border-radius: 3px 3px 0 0;
-    border-bottom: 1px solid #eeeeee;
-}
-
-.title-box .title {
-    font-weight: 550;
-    font-size: 16px;
-    color: #121212;
-    text-transform: uppercase;
-    line-height: 1.5;
-}
-
-.suggest-list ul li a {
-    display: inline-block;
-    background: #eeeeee;
-    padding: 5px 15px;
-    margin-left: 10px;
-    color: #333;
-    border-radius: 15px;
-    box-shadow: 0 0 1px rgb(0 0 0 / 8%);
-    text-decoration: none;
-    font-size: 12px;
-    line-height: 1.5;
-    transition: .3s ease-out;
-}
-
-.suggest-list ul li a:hover {
-    background: #f26a19;
-    color: #fff;
-}
 
 
 
@@ -196,7 +161,7 @@ body {
     padding: 60px 0;
 }
 
-.review-books .title-box .title {
+.review-books .section-header .section-title {
     color: #fff;
 }
 
@@ -352,7 +317,7 @@ body {
     display: flex;
     justify-content: space-between;
 }
-.release-title-box {
+.release-section-header {
     flex: 1;
 }
 .release-list-box {

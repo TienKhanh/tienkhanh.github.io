@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="OwlCarousel/css/owl.carousel.min.css">
     <link rel="stylesheet" href="OwlCarousel/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/category.css">
+    <link rel="stylesheet" href="css/detail-book.css">
 
 
 </head>
@@ -94,20 +94,20 @@
         <div class="main-container">
             <!-- --------------------- book-detail ----------------------------  -->
             <div class="detail-book-container container">
-                <div class="breadcrumb-box pt-3">
+                <div class="breadcrumb-box">
                     <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
+                        <ul class="breadcrumb">
                             <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
                             <li class="breadcrumb-item"><a href="#">Sách tâm lý - kỹ năng sống</a></li>
                             <li class="breadcrumb-item active">Không còn đường lùi mới có thành công</li>
-                        </ol>
+                        </ul>
                     </nav>
                 </div>
-                <div class="detail-book row">
-                    <div class="image-book-detail col-5">
+                <div class="detail-book shadow-sm section-box d-flex justify-content-around">
+                    <div class="image-book-detail">
                         <img src="images/list-books/không còn đường lùi mới có thành công.jpg" alt="">
                     </div>
-                    <div class="content-book-detail col-7">
+                    <div class="content-book-detail">
                         <div class="book-title">
                             <h1>Không còn đường lùi mới có thành công</h1>
                         </div>
@@ -117,16 +117,12 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i>
                             <i class="far fa-star"></i>
-                            &nbsp;5&nbsp;đánh giá
+                            (&nbsp;5&nbsp;đánh giá)
                         </div>
-                        <div class="detail-support">
-                            <div class="shipping">Miễn phí vận chuyển cho đơn hàng từ 200k trong Hà Nội và từ 250k tại các khu vực khác. <a href="">Xem chi tiết</a></div>
-                            <div class="hot-line">Hotline: 0987 889 988</div>
-                            <div class="support-email">Email: support.vnbookteam@gmail.com</div>
-                        </div>
+
                         <div class="price-box">
                             <div class="card-price">Giá bìa: <span class="old-price">92.000đ</span></div>
-                            <div class="card-price">Giá bán: <span class="new-price">73.6.000đ</span></div>
+                            <div class="card-price">Giá bán: <span class="new-price">73.600đ</span></div>
                         </div>
                         <div class="quantity">
                             Số lượng:
@@ -135,162 +131,210 @@
                             <input type="button" value="+" class="plus">
                         </div>
                         <div class="buy-cart">
-                            <button class="add-to-cart">Thêm vào giỏ hàng</button>
                             <button class="buy-now">Mua ngay</button>
+                            <button class="add-to-cart">Thêm vào giỏ hàng</button>
+                        </div>
+
+                        <div class="detail-support">
+                            <div class="shipping">Miễn phí vận chuyển cho đơn hàng từ 200k trong Hà Nội và từ 250k tại
+                                các khu vực khác. <a href="">Xem chi tiết</a></div>
+                            <div class="hot-line">Hotline: 0987 889 988</div>
+                            <div class="support-email">Email: support.vnbookteam@gmail.com</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="related-book shadow-sm section-box">
+                    <div
+                        class="section-header col-xl-12 col-md-12 col-sm-12 d-flex justify-content-between align-items-center">
+                        <div class="section-title">Sách liên quan</div>
+                        <div class="section-tag">
+                            <ul>
+                                <li><a href="">Xem tất cả</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="book-list-box owl-carousel">
+                        <div class="book-item">
+                            <div class="book-image">
+                                <img src="images/list-books/Hoàng Tử Bé -22.5-25-10.jpg" alt="">
+                            </div>
+                            <div class="book-info">
+                                <div class="book-title">Hoàng Tử Bé</div>
+                                <div class="new-price">22.500đ</div>
+                                <div class="old-price">25.000đ</div>
+                                <div class="rating-box">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="far fa-star"></i>
+                                    &nbsp;5&nbsp;đánh giá
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-item">
+                            <div class="book-image">
+                                <img src="images/list-books/Cà Phê Cùng Tony -63-90-30.jpg" alt="">
+                            </div>
+                            <div class="book-info">
+                                <div class="book-title">Cà Phê Cùng Tony</div>
+                                <div class="new-price">63.000đ</div>
+                                <div class="old-price">90.000đ</div>
+                                <div class="rating-box">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="far fa-star"></i>
+                                    &nbsp;10&nbsp;đánh giá
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-item">
+                            <div class="book-image">
+                                <img src="images/list-books/Món Quà Từ Cánh Chim -82.5-165-50.png" alt="">
+                            </div>
+                            <div class="book-info">
+                                <div class="book-title">Món Quà Từ Cánh Chim</div>
+                                <div class="new-price">82.5000đ</div>
+                                <div class="old-price">165.000đ</div>
+                                <div class="rating-box">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    &nbsp;20&nbsp;đánh giá
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-item">
+                            <div class="book-image">
+                                <img src="images/list-books/Kiếp Nào Ta Cũng Tìm Thấy Nhau -62-85-27.jpg" alt="">
+                            </div>
+                            <div class="book-info">
+                                <div class="book-title">Kiếp Nào Ta Cũng Tìm Thấy Nhau</div>
+                                <div class="new-price">62.000đ</div>
+                                <div class="old-price">85.000đ</div>
+                                <div class="rating-box">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    &nbsp;6&nbsp;đánh giá
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-item">
+                            <div class="book-image">
+                                <img src="images/list-books/Cái Bóng Của Bí Mật - 54-108-50.jpg" alt="">
+                            </div>
+                            <div class="book-info">
+                                <div class="book-title">Cái Bóng Của Bí Mật</div>
+                                <div class="new-price">54.000đ</div>
+                                <div class="old-price">108.000đ</div>
+                                <div class="rating-box">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    &nbsp;18&nbsp;đánh giá
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-item">
+                            <div class="book-image">
+                                <img src="images/list-books/Đời Ngắn Đừng Ngủ Dài - 57-75-24.jpg" alt="">
+                            </div>
+                            <div class="book-info">
+                                <div class="book-title">Đời Ngắn Đừng Ngủ Dài</div>
+                                <div class="new-price">57.000đ</div>
+                                <div class="old-price">75.000đ</div>
+                                <div class="rating-box">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    &nbsp;18&nbsp;đánh giá
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-item">
+                            <div class="book-image">
+                                <img src="images/list-books/Phẩm Chất Tốt Của Các Doanh Nhân -23.5-47.50.jpg" alt="">
+                            </div>
+                            <div class="book-info">
+                                <div class="book-title">Phẩm Chất Tốt Của Các Doanh Nhân</div>
+                                <div class="new-price">23.500đ</div>
+                                <div class="old-price">47.000đ</div>
+                                <div class="rating-box">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    &nbsp;18&nbsp;đánh giá
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="book-related">
-                    <div class="related-books shadow-sm section-box">
-                        <div
-                            class="title-box col-xl-12 col-md-12 col-sm-12 d-flex justify-content-between align-items-center">
-                            <div class="title">Phiên chợ sách cũ</div>
-                            <div class="suggest-list">
-                                <ul>
-                                    <li><a href="">Xem tất cả</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="book-list-box owl-carousel">
-                            <div class="book-item">
-                                <div class="book-image">
-                                    <img src="images/list-books/Hoàng Tử Bé -22.5-25-10.jpg" alt="">
-                                </div>
-                                <div class="book-info">
-                                    <div class="book-title">Hoàng Tử Bé</div>
-                                    <div class="new-price">22.500đ</div>
-                                    <div class="old-price">25.000đ</div>
-                                    <div class="rating-box">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star-half-alt"></i>
-                                        <i class="far fa-star"></i>
-                                        &nbsp;5&nbsp;đánh giá
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="book-item">
-                                <div class="book-image">
-                                    <img src="images/list-books/Cà Phê Cùng Tony -63-90-30.jpg" alt="">
-                                </div>
-                                <div class="book-info">
-                                    <div class="book-title">Cà Phê Cùng Tony</div>
-                                    <div class="new-price">63.000đ</div>
-                                    <div class="old-price">90.000đ</div>
-                                    <div class="rating-box">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star-half-alt"></i>
-                                        <i class="far fa-star"></i>
-                                        &nbsp;10&nbsp;đánh giá
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="book-item">
-                                <div class="book-image">
-                                    <img src="images/list-books/Món Quà Từ Cánh Chim -82.5-165-50.png" alt="">
-                                </div>
-                                <div class="book-info">
-                                    <div class="book-title">Món Quà Từ Cánh Chim</div>
-                                    <div class="new-price">82.5000đ</div>
-                                    <div class="old-price">165.000đ</div>
-                                    <div class="rating-box">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star-half-alt"></i>
-                                        &nbsp;20&nbsp;đánh giá
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="book-item">
-                                <div class="book-image">
-                                    <img src="images/list-books/Kiếp Nào Ta Cũng Tìm Thấy Nhau -62-85-27.jpg" alt="">
-                                </div>
-                                <div class="book-info">
-                                    <div class="book-title">Kiếp Nào Ta Cũng Tìm Thấy Nhau</div>
-                                    <div class="new-price">62.000đ</div>
-                                    <div class="old-price">85.000đ</div>
-                                    <div class="rating-box">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        &nbsp;6&nbsp;đánh giá
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="book-item">
-                                <div class="book-image">
-                                    <img src="images/list-books/Cái Bóng Của Bí Mật - 54-108-50.jpg" alt="">
-                                </div>
-                                <div class="book-info">
-                                    <div class="book-title">Cái Bóng Của Bí Mật</div>
-                                    <div class="new-price">54.000đ</div>
-                                    <div class="old-price">108.000đ</div>
-                                    <div class="rating-box">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        &nbsp;18&nbsp;đánh giá
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="book-item">
-                                <div class="book-image">
-                                    <img src="images/list-books/Đời Ngắn Đừng Ngủ Dài - 57-75-24.jpg" alt="">
-                                </div>
-                                <div class="book-info">
-                                    <div class="book-title">Đời Ngắn Đừng Ngủ Dài</div>
-                                    <div class="new-price">57.000đ</div>
-                                    <div class="old-price">75.000đ</div>
-                                    <div class="rating-box">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        &nbsp;18&nbsp;đánh giá
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="book-item">
-                                <div class="book-image">
-                                    <img src="images/list-books/Phẩm Chất Tốt Của Các Doanh Nhân -23.5-47.50.jpg" alt="">
-                                </div>
-                                <div class="book-info">
-                                    <div class="book-title">Phẩm Chất Tốt Của Các Doanh Nhân</div>
-                                    <div class="new-price">23.500đ</div>
-                                    <div class="old-price">47.000đ</div>
-                                    <div class="rating-box">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        &nbsp;18&nbsp;đánh giá
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="desc-detail shadow-sm section-box">
+                    <div
+                        class="section-header col-xl-12 col-md-12 col-sm-12 d-flex justify-content-between align-items-center">
+                        <div class="section-title">Giới thiệu sách</div>
+                    </div>
+                    <div class="desc-content">
+                        <h3>Không còn đường lùi mới có thành công</h3>
+                        <p>
+                            Có bao nhiêu người còn chưa hiểu rõ chuyện của tuổi 20 đã vội vàng bước vào 30?
+                        </p>
+                        <p>
+                            “Có những lúc sở dĩ chúng ta thất bại chính là vì có quá nhiều lựa chọn, không thể nào quyết đoán, không thể nào dũng cảm tiến về phía trước. Giống như một người băn khoăn nên mua sách học ngoại ngữ nào, cuối cùng chẳng học thuộc được một từ nào; một người băn khoăn nên đến phòng tập nào, cuối cùng chẳng chạy bộ một ngày nào. Rất nhiều khi, chỉ có chặn đường lùi, chúng ta mới có thể nhìn thấy con đường dẫn tới thành công.”
+                        </p>
+                        <p>
+                            Không còn đường lùi mới có thành công, một cái tên có thể nói lên được giá trị quan mà mỗi người chúng ta nên có trong thời đại ngày nay.
+                        </p>
+                        <p>
+                            Cuốn sách này giúp cho bạn biết cách từ giao tiếp, trao đổi với người khác đến nâng cao kĩ năng của bản thân và phương thức tư duy chính xác khi đối mặt với thế giới này, tập trung rất nhiều thông tin hữu ích.
+                        </p>
+                        <p>
+                            Cùng nhau trải nghiệm với “Không còn đường lùi mới có thành công!
+                        </p>
                     </div>
                 </div>
-                <div class="desc-detail">
-                    2
-                </div>
-                <div class="book-attribute">
-                    3
+                <div class="book-attribute shadow-sm section-box">
+                    <div
+                        class="section-header col-xl-12 col-md-12 col-sm-12 d-flex justify-content-between align-items-center">
+                        <div class="section-title">Chi tiết sách</div>
+                    </div>
+                    <div class="attribute-content row">
+                        <div class="col-6">
+                            <p><span class="font-weight-bold">Tác giả:</span> Lý Thượng Long</p>
+                            <p><span class="font-weight-bold">Nhà cung cấp:</span> Minh Long Books</p>
+                            <p><span class="font-weight-bold">Định dạng:</span> Bìa mềm</p>
+                            <p><span class="font-weight-bold">Năm xuất bản:</span> 2020</p>
+                            <p><span class="font-weight-bold">Nhà xuất bản:</span> NXB Văn Học</p>
+                            <p><span class="font-weight-bold">Thể loại:</span> Sách tâm lý - kỹ năng sống</p>
+                        </div>
+                        <div class="col-6">
+                            <p><span class="font-weight-bold">Mã sản phẩm:</span> SKNKNS7919</p>
+                            <p><span class="font-weight-bold">Ngôn ngữ:</span> Tiếng Việt</p>
+                            <p><span class="font-weight-bold">Kích thước:</span> 20.5 x 14.5 cm</p>
+                            <p><span class="font-weight-bold">Số trang:</span> 276</p>
+                            <p><span class="font-weight-bold">Mã ISBN:</span> </p>
+                            <p><span class="font-weight-bold">Tuyển tập:</span> Sách chạy trong năm</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="book-rate">
                     4
                 </div>
-                
+
             </div>
 
         </div>
