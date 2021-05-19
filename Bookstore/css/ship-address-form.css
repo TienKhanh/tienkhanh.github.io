@@ -6,3 +6,8 @@
     margin: 0 auto;
     padding: 50px 0;
 }
+
+label span {
+    color: #FC4B4B;
+}
+

@@ -1,0 +1,78 @@
+{
+    "book_items": [
+        {
+            "id": 1,
+            "title": "Để con được ốm",
+            "img": "https://raw.githubusercontent.com/TienKhanh/tienkhanh.github.io/main/Bookstore/images/list-books/%C4%90%E1%BB%83%20Con%20%C4%90%C6%B0%E1%BB%A3c%20%E1%BB%90m%20-76-95-20.jpg",
+            "new_price":69700,
+            "old_price":85000,
+            "rating":4.5,
+            "review": 18,
+            "flashsale":true,
+            "monthly_ranking": false,
+            "category": [1,2],
+            "suplier": [3,4]
+        },
+        {
+            "id": 2,
+            "title": "Khi hơi thở hóa thinh không",
+            "img": "https://raw.githubusercontent.com/TienKhanh/tienkhanh.github.io/main/Bookstore/images/list-books/Khi%20h%C6%A1i%20th%E1%BB%9F%20h%C3%B3a%20thinh%20kh%C3%B4ng%20-%2087-109-20.jpg",
+            "new_price":87000,
+            "old_price":109000,
+            "category":"sách trong nước",
+            "rating":5,
+            "review": 20,
+            "flashsale":true,
+            "monthly_ranking": false
+        },
+        {
+            "id": 3,
+            "title": "Cho tôi xin một vé đi tuổi thơ",
+            "img": "https://raw.githubusercontent.com/TienKhanh/tienkhanh.github.io/main/Bookstore/images/list-books/Cho%20T%C3%B4i%20Xin%20M%E1%BB%99t%20V%C3%A9%20%C4%90i%20Tu%E1%BB%95i%20Th%C6%A1%20-64-80-20.jpg",
+            "new_price":64000,
+            "old_price":"",
+            "category":"sách trong nước",
+            "rating":5,
+            "review": 10,
+            "flashsale":true,
+            "monthly_ranking": false
+        },
+        {
+            "id": 4,
+            "title": "Con về không phải bởi phép màu",
+            "img": "https://raw.githubusercontent.com/TienKhanh/tienkhanh.github.io/main/Bookstore/images/list-books/Con%20V%E1%BB%81%20Kh%C3%B4ng%20Ph%E1%BA%A3i%20B%E1%BB%9Fi%20Ph%C3%A9p%20M%C3%A0u%20-%2057-72-20.jpg",
+            "new_price":57500,
+            "old_price":72000,
+            "category":"sách trong nước",
+            "rating":5,
+            "review": 20,
+            "flashsale":true,
+            "monthly_ranking": false
+        },
+        {
+            "id": 5,
+            "title": "Rèn luyện tư duy phản biện",
+            "img": "https://raw.githubusercontent.com/TienKhanh/tienkhanh.github.io/main/Bookstore/images/list-books/R%C3%A8n%20luy%E1%BB%87n%20t%C6%B0%20duy%20ph%E1%BA%A3n%20bi%E1%BB%87n%20-%2077-99-22.jpg",
+            "new_price":77000,
+            "old_price":"",
+            "category":"sách trong nước",
+            "rating":5,
+            "review": 20,
+            "flashsale":true,
+            "monthly_ranking": false
+        },
+        {
+            "id": 6,
+            "title": "Về nhà với mẹ",
+            "img": "https://raw.githubusercontent.com/TienKhanh/tienkhanh.github.io/main/Bookstore/images/list-books/V%E1%BB%81%20nh%C3%A0%20v%E1%BB%9Bi%20m%E1%BA%B9%20-%2075-89-15.jpg",
+            "new_price":75000,
+            "old_price":89000,
+            "category":"sách trong nước",
+            "rating":4.5,
+            "review": 10,
+            "flashsale":true,
+            "monthly_ranking": false
+        }
+        
+    ]
+}

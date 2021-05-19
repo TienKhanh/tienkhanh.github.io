@@ -98,89 +98,53 @@
                     <ul class="progressbar">
                         <li class="active">Kiểm tra giỏ hàng</li>
                         <li class="active">Địa chỉ giao hàng</li>
-                        <li>Thanh toán</li>
+                        <li class="active">Thanh toán</li>
                     </ul>
                 </div>
 
                 <div class="list-cart shadow-sm section-box">
                     <div
                         class="section-header col-xl-12 col-md-12 col-sm-12 d-flex justify-content-between align-items-center">
-                        <div class="section-title">Địa chỉ giao hàng</div>
+                        <div class="section-title">Thanh toán</div>
                     </div>
-                    <div class="ship-address-content">
-                        <form>
-                            <div class="form-group row">
-                                <label for="name" class="col-sm-3 col-form-label">Họ và tên <span>(*)</span></label>
-                                <div class="col-sm-9">
-                                    <input type="text" class="form-control" id="name" placeholder="Nhập họ tên">
+                    <div class="payment-content">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-title">
+                                        <h4>Địa chỉ giao hàng</h4>
+                                    </div>
+                                    <div class="card-info">
+                                        <p>Nguyễn Văn A</p>
+                                        <p>Điện thoại: 0967888999</p>
+                                        <p>Email: nguyenvana@gmail.com</p>
+                                        <p>2C2 Trần Quốc Hoàn, Cầu Giấy, Hà Nội</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-title">
+                                        <h4>Hình thức thanh toán</h4>
+                                    </div>
+                                    <div class="card-info">
+                                        <div class="radio">
+                                            <label><input type="radio" name="optradio" checked>Thanh toán khi nhận hàng</label>
+                                        </div>
+                                        <div class="radio">
+                                            <label><input type="radio" name="optradio">Thanh toán qua thẻ ngân hàng</label>
+                                        </div>
+                                        <div class="radio">
+                                            <label><input type="radio" name="optradio" disabled>Thanh toán qua Momo</label>
+                                        </div>
+                                        <div class="radio">
+                                            <label><input type="radio" name="optradio" disabled>Thanh toán qua Airpay</label>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="form-group row">
-                                <label for="phone-number" class="col-sm-3 col-form-label">Số điện thoại <span>(*)</span></label>
-                                <div class="col-sm-9">
-                                    <input type="text" class="form-control" id="phone-number" placeholder="Số điện thoại">
-                                </div>
+                            <div class="col-md-6">
+                                
                             </div>
-                            <div class="form-group row">
-                                <label for="email" class="col-sm-3 col-form-label">Email <span>(*)</span></label>
-                                <div class="col-sm-9">
-                                    <input type="email" class="form-control" id="email" placeholder="Email xác nhận đơn hàng">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="city" class="col-sm-3 col-form-label">Tỉnh thành <span>(*)</span></label>
-                                <div class="col-sm-9">
-                                    <select id="city" class="form-control">
-                                        <option selected>Chọn tỉnh thành</option>
-                                        <option>Hà Nội</option>
-                                        <option>Hồ Chí Minh</option>
-                                        <option>Đà Nẵng</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="city" class="col-sm-3 col-form-label">Quận huyện <span>(*)</span></label>
-                                <div class="col-sm-9">
-                                    <select id="city" class="form-control">
-                                        <option selected>Chọn quận huyện</option>
-                                        <option>Quận Ba Đình</option>
-                                        <option>Quận Bắc Từ Liêm</option>
-                                        <option>Quận Cầu Giấy</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="city" class="col-sm-3 col-form-label">Phường xã <span>(*)</span></label>
-                                <div class="col-sm-9">
-                                    <select id="city" class="form-control">
-                                        <option selected>Chọn phường xã</option>
-                                        <option>Quận Ba Đình</option>
-                                        <option>Quận Bắc Từ Liêm</option>
-                                        <option>Quận Cầu Giấy</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="detail-address" class="col-sm-3 col-form-label">Địa chỉ chi tiết <span>(*)</span></label>
-                                <div class="col-sm-9">
-                                    <input type="text" class="form-control" id="detail-address" placeholder="">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="more-note" class="col-sm-3 col-form-label">Ghi chú</label>
-                                <div class="col-sm-9">
-                                    <input type="text" class="form-control" id="more-note" placeholder="">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="more-note" class="col-sm-3 col-form-label"></label>
-                                <div class="col-sm-9">
-                                    <a class="save-and-countinue" href="payment.html">Lưu và tiếp tục</a>
-                                </div>
-                            </div>
-
-                        </form>
+                        </div>
                     </div>
                 </div>
 

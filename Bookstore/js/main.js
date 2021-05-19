@@ -46,7 +46,6 @@ $(document).ready(function(){
     });
 
     var book_item_max_height = $(".owl-stage-outer").height(); 
-    console.log(book_item_max_height);
     $(".book-item").innerHeight(book_item_max_height);
 
 });
