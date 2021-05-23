@@ -1,7 +1,6 @@
 .main-container {
-    background: #eeeeee;
+    padding-top: 0;
 }
-
 
 /* SIDEBAR  */
 
@@ -49,12 +48,16 @@
     color: #f26a19;
 }
 
+.category-wrapper {
+    background: none!important;
+}
+
 /* CATEGORY CONTENT  */
 .category-content {
     background: #fff;
     border-radius: 3px;
     margin-bottom: 1rem;
-    padding: 0!important;
+    padding: 0;
 }
 
 /* CATEGORY NAME  */
@@ -69,7 +72,9 @@
 }
 
 /* CATEGORY SLIDEBAR  */
-
+.sidebar-box {
+    padding-left: 0;
+}
 .category-slidebar {
     padding-right: -15px;
     padding-left: -15px;

@@ -1,6 +1,7 @@
 .main-container {
-    background: #eeeeee;
+    padding-top: 0;
 }
+
 .detail-book, .related-book, .desc-detail, .book-attribute {
     margin-bottom: 20px;
 }

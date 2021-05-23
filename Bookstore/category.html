@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bookstore</title>
+    <title>Category</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
@@ -93,9 +93,8 @@
         <div class="opacity-screen"></div>
         <div class="main-container">
             <!-- --------------------- category ----------------------------  -->
-            <div class="category-container container">
-
-                <div class="breadcrumb-box">
+           
+                <div class="container breadcrumb-box">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
@@ -104,10 +103,10 @@
                         </ol>
                     </nav>
                 </div>
-                <div class="category-wrapper">
+                <div class="container category-wrapper">
                     <div class="row">
                         <div class="sidebar-box col-md-3">
-                            <div class="sidebar-item mb-3">
+                            <div class="sidebar-item">
                                 <div class="sidebar-header">
                                     <h4>Danh mục sản phẩm</h4>
                                 </div>
@@ -206,7 +205,7 @@
                                         <a href="">Giá cao</a>
                                     </li>
                                 </ul>
-                                <div class="product-list row pl-3 pr-3">
+                                <div class="product-list row">
                                     <div class="book-item col-md-3">
                                         <div class="book-image">
                                             <a href="detail-book.html">
@@ -546,24 +545,28 @@
         </div>
         <div class="footer">
             <div class="footer-top">
-                <ul>
-                    <li><a href="">Về chúng tôi</a></li>
-                    <li><a href="">Lần đầu đến đây</a></li>
-                    <li>
-                        <a href="">
-                            <img src="images/logo/Logo-black-bg.png" alt="" width="150px">
-                        </a>
-                    </li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Facebook</a></li>
-                </ul>
+                <div class="container">
+                    <ul>
+                        <li><a href="">Về chúng tôi</a></li>
+                        <li><a href="">Lần đầu đến đây</a></li>
+                        <li>
+                            <a href="">
+                                <img src="images/logo/Logo-black-bg.png" alt="" width="150px">
+                            </a>
+                        </li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Facebook</a></li>
+                    </ul>
+                </div>
+                
             </div>
             <div class="footer-bottom">
-                <ul>
-                    <li><a href="">Điều khoản</a></li>
-                    <li><a href="">Chính sách</a></li>
-                </ul>
-
+                <div class="container">
+                    <ul>
+                        <li class="text-right" style="padding-right: 80px;"><a href="">Điều khoản</a></li>
+                        <li class="text-left" style="padding-left: 80px;"><a href="">Chính sách</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

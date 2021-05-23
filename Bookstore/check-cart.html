@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bookstore</title>
+    <title>Check cart</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
@@ -93,8 +93,8 @@
         <div class="opacity-screen"></div>
         <div class="main-container">
             <!-- --------------------- book-detail ----------------------------  -->
-            <div class="checkcart-container container">
-                <div class="progressbar-box shadow-sm section-box">
+            
+                <div class="container progressbar-box shadow-sm">
                     <ul class="progressbar">
                         <li class="active">Kiểm tra giỏ hàng</li>
                         <li>Địa chỉ giao hàng</li>
@@ -102,7 +102,7 @@
                     </ul>
                 </div>
 
-                <div class="list-cart shadow-sm section-box">
+                <div class="container list-cart shadow-sm section-box">
                     <div
                         class="section-header col-xl-12 col-md-12 col-sm-12 d-flex justify-content-between align-items-center">
                         <div class="section-title">Giỏ hàng</div>
@@ -110,7 +110,7 @@
                     <div class="list-cart-content">
                         <div class="row">
                             <div class="col-md-8">
-                                <div class="cart-item cart-shadow">
+                                <div class="card-left">
                                     <div class="product-image">
                                         <a href="">
                                             <img src="images/list-books/Đừng nói chuyện với cô ấy -100-126-20.jpg"
@@ -130,16 +130,13 @@
                                             <input type="tel" class="qty" value="1">
                                             <input type="button" value="+" class="plus">
                                         </div>
-
                                     </div>
-                                    <div class="price-total">
-                                        <div class="price">100.000đ</div>
-                                    </div>
+                                    <div class="product-price-total">100.000đ</div>
                                     <div class="btn-delete">
                                         <i class="far fa-trash-alt"></i>
                                     </div>
                                 </div>
-                                <div class="cart-item cart-shadow">
+                                <div class="card-left">
                                     <div class="product-image">
                                         <a href="">
                                             <img src="images/list-books/tâm lý học tội phạm - 122-149-18.jpg" alt="">
@@ -160,14 +157,12 @@
                                         </div>
 
                                     </div>
-                                    <div class="price-total">
-                                        <div class="price">122.000đ</div>
-                                    </div>
+                                    <div class="product-price-total">122.000đ</div>
                                     <div class="btn-delete">
                                         <i class="far fa-trash-alt"></i>
                                     </div>
                                 </div>
-                                <div class="cart-item cart-shadow">
+                                <div class="card-left">
                                     <div class="product-image">
                                         <a href="">
                                             <img src="images/list-books/nguồn gốc tội lỗi -137-168-18.jpg" alt="">
@@ -188,9 +183,7 @@
                                         </div>
 
                                     </div>
-                                    <div class="price-total">
-                                        <div class="price">137.000đ</div>
-                                    </div>
+                                    <div class="product-price-total">137.000đ</div>
                                     <div class="btn-delete">
                                         <i class="far fa-trash-alt"></i>
                                     </div>
@@ -198,71 +191,74 @@
 
                             </div>
                             <div class="col-md-4">
-                                <div class="cart-right cart-shadow">
+                                <div class="card-right">
                                     <div class="coupon-header">
-                                        <div class="coupon-title">Mã Khuyến Mãi</div>
-                                        <div class="coupon-desc">Có thể chọn 2 <i class="fas fa-exclamation-circle"></i></div>
+                                        <div class="item">
+                                            <div class="coupon-title">Mã Khuyến Mãi</div>
+                                            <div class="coupon-desc">Có thể chọn 2 <i class="fas fa-exclamation-circle"></i></div>
+                                        </div>
                                     </div>
                                     <div class="coupon-select">
                                         <a href=""><i class="fas fa-ticket-alt"></i> Chọn mã Khuyến mãi</a>
                                     </div>
 
                                 </div>
-                                <div class="cart-right cart-shadow">
-                                    <div class="price-page">
+                                <div class="card-right">
+                                    <div class="price-info">
                                         <div class="item">
-                                            <div class="item-header">Tạm tính:</div>
+                                            <div class="item-title">Tạm tính:</div>
                                             <div class="item-price">349.000đ</div>
                                         </div>
                                         <div class="item">
-                                            <div class="item-header">Khuyến mãi coupon:</div>
+                                            <div class="item-title">Khuyến mãi coupon:</div>
                                             <div class="item-price"> -50.00đ</div>
                                         </div>
                                         <div class="item">
-                                            <div class="item-header">Khuyến mãi ship:</div>
+                                            <div class="item-title">Khuyến mãi ship:</div>
                                             <div class="item-price"> -10.000đ</div>
                                         </div>
 
                                     </div>
-                                    <div class="price-total-page">
+                                    <div class="price-total">
                                         <div class="item">
-                                            <div class="item-header">Thành tiền:</div>
+                                            <div class="item-title">Thành tiền:</div>
                                             <div class="item-price">320.000đ</div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="cart-right">
+                                <div class="card-right">
                                     <button class="btn_next">Tiếp tục</button>
                                 </div>
                                
                             </div>
                         </div>
                     </div>
-                </div>
-
-            </div>
-            
+                </div>           
         </div>
         <div class="footer">
             <div class="footer-top">
-                <ul>
-                    <li><a href="">Về chúng tôi</a></li>
-                    <li><a href="">Lần đầu đến đây</a></li>
-                    <li>
-                        <a href="">
-                            <img src="images/logo/Logo-black-bg.png" alt="" width="150px">
-                        </a>
-                    </li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Facebook</a></li>
-                </ul>
+                <div class="container">
+                    <ul>
+                        <li><a href="">Về chúng tôi</a></li>
+                        <li><a href="">Lần đầu đến đây</a></li>
+                        <li>
+                            <a href="">
+                                <img src="images/logo/Logo-black-bg.png" alt="" width="150px">
+                            </a>
+                        </li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Facebook</a></li>
+                    </ul>
+                </div>
+                
             </div>
             <div class="footer-bottom">
-                <ul>
-                    <li><a href="">Điều khoản</a></li>
-                    <li><a href="">Chính sách</a></li>
-                </ul>
-
+                <div class="container">
+                    <ul>
+                        <li class="text-right" style="padding-right: 80px;"><a href="">Điều khoản</a></li>
+                        <li class="text-left" style="padding-left: 80px;"><a href="">Chính sách</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

@@ -1,4 +1,7 @@
 $(document).ready(function () {
+    $(".book-category").hover(function(){
+        $(".opacity-screen").toggle();
+    });
     function formatNumber(num) {
         return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.')
     }
@@ -39,10 +42,11 @@ $(document).ready(function () {
             });
 
         }
-        var flashsale_book_item_max_height = $(".flashsale-books .book-list-box .owl-stage-outer .book-item").height();
-        console.log(flashsale_book_item_max_height);
-        $(".flashsale-books .book-item").height(flashsale_book_item_max_height);
+        // var flashsale_book_item_max_height = $(".flashsale-books .book-list-box .owl-stage-outer .book-item").height();
+        // console.log(flashsale_book_item_max_height);
+        // $(".flashsale-books .book-item").height(flashsale_book_item_max_height);
     });
+
     $('.book-list-box').owlCarousel({
         nav: true,
         navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
@@ -58,6 +62,7 @@ $(document).ready(function () {
             }
         }
     });
+
     $(".book-category").hover(function () {
         $(".opacity-screen").toggle();
     });
@@ -73,21 +78,6 @@ $(document).ready(function () {
         navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
     });
 
-    $('.book-list-box').owlCarousel({
-        nav: true,
-        navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 3
-            },
-            1000: {
-                items: 5
-            }
-        }
-    });
     $('.release-list').owlCarousel({
         center: true,
         items: 2,
@@ -102,7 +92,5 @@ $(document).ready(function () {
         autoplayTimeout: 3000,
         autoplayHoverPause: true,
     });
-
-
 
 });

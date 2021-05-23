@@ -1,25 +1,39 @@
 
-body {
+.main-container {
+    background: none;
+    padding: 0;
     background-image: url("../images/background/bg-wallpaper-1.jpg");
     background-size: cover;
     background-attachment: fixed;
 }
 
+.gray-bg .container {
+    margin-bottom: 0;
+}
+
 .gray-bg {
-    width: 100%;
     background: #eeeeee;
-    padding-top: 60px;
-}
-.gray-bg:nth-child(1){
-    padding-top: 20px;
-}
-.gray-bg:nth-child(4){
     padding-bottom: 80px;
 }
 
+.gray-bg:first-child {
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+
+.main-container .container:last-child{
+    margin-bottom: 0;
+}
+.bestseller-books, .see-list, .review-books {
+    background: none!important;
+}
 
 /* SUPPORT  */
-
+.support-box {
+    background: none!important;
+    box-shadow: none!important;
+}
 .support-item {
     flex-basis: 23%;
     color: #121212;
@@ -256,13 +270,12 @@ body {
 .see-list {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 80px;
     font-family: 'Merriweather', serif;
     text-align: center;
 }
 
 .domestic-book, .foreign-book {
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
     background-size: cover;
     flex-basis: 48%;
     height: 200px;
@@ -322,4 +335,10 @@ body {
 }
 .release-list-box {
     width: 875px;
+}
+
+
+.bestseller-books .book-info {
+    padding: 0;
+    padding-bottom: 20px;
 }

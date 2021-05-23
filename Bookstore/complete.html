@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment</title>
+    <title>Complete</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="OwlCarousel/css/owl.carousel.min.css">
     <link rel="stylesheet" href="OwlCarousel/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/payment.css">
+    <link rel="stylesheet" href="css/complete.css">
 
 
 </head>
@@ -24,7 +24,6 @@
 <body>
     <div id="main">
         <div class="header">
-
             <div class="header-top container">
                 <!-- <div class="quote">
                         ~~~ Mỗi cuốn sách là một bức tranh kỳ diệu về cuộc sống ~~~
@@ -93,104 +92,38 @@
         <div class="opacity-screen"></div>
         <div class="main-container">
             <!-- --------------------- book-detail ----------------------------  -->
-            
-                <div class="container progressbar-box shadow-sm">
-                    <ul class="progressbar">
-                        <li class="active">Kiểm tra giỏ hàng</li>
-                        <li class="active">Địa chỉ giao hàng</li>
-                        <li class="active">Thanh toán</li>
-                    </ul>
+            <div class="container progressbar-box shadow-sm section-box">
+                <ul class="progressbar">
+                    <li class="active">Kiểm tra giỏ hàng</li>
+                    <li class="active">Địa chỉ giao hàng</li>
+                    <li class="active">Thanh toán</li>
+                </ul>
+            </div>
+
+            <div class="container list-cart shadow-sm section-box">
+                <div
+                    class="section-header col-xl-12 col-md-12 col-sm-12 d-flex justify-content-between align-items-center">
+                    <div class="section-title">Thanh toán</div>
                 </div>
-
-                <div class="container list-cart shadow-sm">
-                    <div
-                        class="section-header col-xl-12 col-md-12 col-sm-12 d-flex justify-content-between align-items-center">
-                        <div class="section-title">Thanh toán</div>
+                <div class="section-content">
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        <strong>Thông báo: </strong> uý khách đã đặt hàng thành công. Mã đơn hàng của quý khách là
+                        <strong>#990321</strong>.
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
-                    <div class="section-content" id="payment-box">
-                        <div class="row">
-                            <div class="col-md-7">
-                                <div class="card-left">
-                                    <div class="card-header">
-                                        Thông tin khách hàng
-                                        <div class="float-right"><i class="far fa-edit"></i>Sửa</div>
-                                    </div>
-                                    <div class="customer-info">
-                                        <p>Nguyễn Tiến Khánh</p>
-                                        <p>Điện thoại: 0867199839</p>
-                                        <p>Email: tienkhanhvn@gmail.com</p>
-                                        <p>Xuân Dương, Kim Lũ, Sóc Sơn, Hà Nội</p>
-                                    </div>
-                                </div>
-                                <div class="card-left">
-                                    <div class="card-header">
-                                        Hình thức thanh toán
-                                    </div>
-                                    <div class="payment-method-box">
-                                        <div class="payment-method">
-                                            <label><input type="radio" name="payment" checked>Chuyển tiền qua thẻ ngân hàng</label>
-                                        </div>
-                                        <div class="payment-method">
-                                            <label><input type="radio" name="payment">Trả tiền khi nhận hàng</label>
-                                        </div>
-                                        <div class="payment-method">
-                                            <label><input type="radio" name="payment">Trả tiền qua Momo</label>
-                                        </div>
-                                        <div class="payment-method">
-                                            <label><input type="radio" name="payment">Trả tiền qua AirPay</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5">
-                                <div class="card-right">
-                                    <div class="card-header">
-                                        Tóm tắt đơn hàng
-                                    </div>
-                                    <div class="order-info">
-                                        <div class="item">
-                                            <div class="item-title">Tâm lý học tội phạm<span class="order-number"> &#120; 2</span></div>
-                                            <div class="item-price">187.000đ</div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="item-title">Rèn luyện tư duy phản biện<span class="order-number"> &#120; 1</span></div>
-                                            <div class="item-price">63.000đ</div>
-                                        </div>
-                                    </div>
-                                    <div class="price-info">
-                                        <div class="item">
-                                            <div class="item-title">Tạm tính:</div>
-                                            <div class="item-price">349.000đ</div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="item-title">Phí ship:</div>
-                                            <div class="item-price">20.000đ</div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="item-title">Khuyến mãi coupon:</div>
-                                            <div class="item-price"> -50.00đ</div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="item-title">Khuyến mãi phí ship:</div>
-                                            <div class="item-price"> -10.000đ</div>
-                                        </div>
 
-                                    </div>
-                                    <div class="price-total">
-                                        <div class="item">
-                                            <div class="item-title">Thành tiền:</div>
-                                            <div class="item-price">320.000đ</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-right">
-                                    <button class="btn-payment">Thanh toán</button>
-                                </div>
-                            </div>
-
-                        </div>
+                    <div class="anounce-thumnail">
+                        <img src="images/cart.png" alt="">
                     </div>
+                    <div class="note">
+                        Quý khách vui lòng kích <a href="">vào đây</a> để kiểm tra tình trạng đơn hàng.
+
+                    </div>
+                    <a type="button" class="btn btn-warning btn-back-home">Tiếp tục mua sắm</a>
                 </div>
+            </div>
 
 
         </div>

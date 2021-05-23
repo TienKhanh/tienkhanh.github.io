@@ -1,0 +1,58 @@
+.main-container {
+    background: #fff;
+}
+.review-section .section-content {
+    display: flex;
+    justify-content: space-between;
+}
+.newest-review {
+    flex-basis: 65%;
+}
+.featured-review {
+    flex-basis: 30%;
+}
+.section-header {
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    border-bottom: 2px solid #c0c0c0;
+    margin-bottom: 30px;
+}
+
+.newest-review, .featured-review {
+    padding: 0;
+}
+.newest-review .review-item {
+    display: flex;
+    padding: 20px 30px;
+    background: #f7f7f7;
+    justify-content: space-between;
+}
+.newest-review .review-info {
+    flex-basis: 75%;
+}
+.newest-review .review-thumbnail {
+    flex-basis: 22%;
+}
+.newest-review .review-thumbnail img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.review-title {
+    font-family: 'Merriweather', serif;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+.create-info {
+    display: flex;
+    margin-bottom: 15px;
+}
+.create-time {
+    margin-right: 20px;
+}
+.review-desc {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 140%;
+}
