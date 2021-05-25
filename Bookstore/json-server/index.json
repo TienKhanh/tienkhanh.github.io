@@ -8,10 +8,10 @@
             "old_price":85000,
             "rating":4.5,
             "review": 18,
-            "flashsale":true,
+            "flashsale":false,
             "monthly_ranking": false,
-            "category": [1,2],
-            "suplier": [3,4]
+            "category": "vanhoc",
+            "suplier": "backviet, nhanam"
         },
         {
             "id": 2,
@@ -19,11 +19,12 @@
             "img": "https://raw.githubusercontent.com/TienKhanh/tienkhanh.github.io/main/Bookstore/images/list-books/Khi%20h%C6%A1i%20th%E1%BB%9F%20h%C3%B3a%20thinh%20kh%C3%B4ng%20-%2087-109-20.jpg",
             "new_price":87000,
             "old_price":109000,
-            "category":"sách trong nước",
             "rating":5,
             "review": 20,
             "flashsale":true,
-            "monthly_ranking": false
+            "monthly_ranking": false,
+            "category": "sachkinhte",
+            "suplier": "backviet, nhanam"
         },
         {
             "id": 3,
@@ -31,11 +32,11 @@
             "img": "https://raw.githubusercontent.com/TienKhanh/tienkhanh.github.io/main/Bookstore/images/list-books/Cho%20T%C3%B4i%20Xin%20M%E1%BB%99t%20V%C3%A9%20%C4%90i%20Tu%E1%BB%95i%20Th%C6%A1%20-64-80-20.jpg",
             "new_price":64000,
             "old_price":"",
-            "category":"sách trong nước",
             "rating":5,
             "review": 10,
             "flashsale":true,
-            "monthly_ranking": false
+            "monthly_ranking": false,
+            "category": "vanhoc"
         },
         {
             "id": 4,
@@ -43,11 +44,11 @@
             "img": "https://raw.githubusercontent.com/TienKhanh/tienkhanh.github.io/main/Bookstore/images/list-books/Con%20V%E1%BB%81%20Kh%C3%B4ng%20Ph%E1%BA%A3i%20B%E1%BB%9Fi%20Ph%C3%A9p%20M%C3%A0u%20-%2057-72-20.jpg",
             "new_price":57500,
             "old_price":72000,
-            "category":"sách trong nước",
             "rating":5,
             "review": 20,
             "flashsale":true,
-            "monthly_ranking": false
+            "monthly_ranking": false,
+            "category": "vanhoc"
         },
         {
             "id": 5,
@@ -55,7 +56,6 @@
             "img": "https://raw.githubusercontent.com/TienKhanh/tienkhanh.github.io/main/Bookstore/images/list-books/R%C3%A8n%20luy%E1%BB%87n%20t%C6%B0%20duy%20ph%E1%BA%A3n%20bi%E1%BB%87n%20-%2077-99-22.jpg",
             "new_price":77000,
             "old_price":"",
-            "category":"sách trong nước",
             "rating":5,
             "review": 20,
             "flashsale":true,
@@ -67,12 +67,124 @@
             "img": "https://raw.githubusercontent.com/TienKhanh/tienkhanh.github.io/main/Bookstore/images/list-books/V%E1%BB%81%20nh%C3%A0%20v%E1%BB%9Bi%20m%E1%BA%B9%20-%2075-89-15.jpg",
             "new_price":75000,
             "old_price":89000,
-            "category":"sách trong nước",
             "rating":4.5,
             "review": 10,
             "flashsale":true,
-            "monthly_ranking": false
+            "monthly_ranking": false,
+            "category": "vanhoc"
+        },
+        {
+            "id": 7,
+            "title": "Đừng nói chuyện với cô ấy",
+            "img": "",
+            "new_price":100000,
+            "old_price":126000,
+            "rating":5,
+            "review": 10,
+            "flashsale":true,
+            "monthly_ranking": false,
+            "category": "vanhoc"
+        },
+        {
+            "id": 8,
+            "title": "Nguồn gốc tội lỗi",
+            "img": "",
+            "new_price":137000,
+            "old_price":168000,
+            "rating":5,
+            "review": 10,
+            "flashsale":false,
+            "monthly_ranking": true
+        },
+        {
+            "id": 9,
+            "title": "Tâm lý học tội phạm",
+            "img": "",
+            "new_price":122000,
+            "old_price":149000,
+            "rating":5,
+            "review": 10,
+            "flashsale":false,
+            "monthly_ranking": true
+        },
+        {
+            "id": 10,
+            "title": "Phẩm chất tốt của các doanh nhân",
+            "img": "",
+            "new_price":23500,
+            "old_price":475000,
+            "rating":5,
+            "review": 10,
+            "flashsale":false,
+            "monthly_ranking": true
+        },
+        {
+            "id": 11,
+            "title": "Cái bóng của bí mật",
+            "img": "",
+            "new_price":54000,
+            "old_price":108000,
+            "rating":5,
+            "review": 18,
+            "flashsale":false,
+            "monthly_ranking": true
+        },
+        {
+            "id": 12,
+            "title": "Kiếp nào ta cũng tìm thấy nhau",
+            "img": "",
+            "new_price":62000,
+            "old_price":87000,
+            "rating":5,
+            "review": 6,
+            "flashsale":true,
+            "monthly_ranking": true,
+            "category": "vanhoc"
+        },
+        {
+            "id": 13,
+            "title": "Hoàng tử bé",
+            "img": "",
+            "new_price":22500,
+            "old_price":25000,
+            "rating":5,
+            "review": 10,
+            "flashsale":false,
+            "monthly_ranking": true,
+            "category": "vanhoc"
+        },
+        {
+            "id": 14,
+            "title": "Cà phê cùng Tony",
+            "img": "",
+            "new_price":63000,
+            "old_price":90000,
+            "rating":5,
+            "review": 10,
+            "flashsale":false,
+            "monthly_ranking": true
+        },
+        {
+            "id": 15,
+            "title": "Món quà từ cánh chim",
+            "img": "",
+            "new_price":82000,
+            "old_price":165000,
+            "rating":5,
+            "review": 20,
+            "flashsale":false,
+            "monthly_ranking": true
+        },
+        {
+            "id": 16,
+            "title": "Đời ngắn đừng ngủ dài",
+            "img": "",
+            "new_price":57000,
+            "old_price":75000,
+            "rating":5,
+            "review": 18,
+            "flashsale":false,
+            "monthly_ranking": true
         }
-        
     ]
 }
