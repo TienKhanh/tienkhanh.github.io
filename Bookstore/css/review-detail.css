@@ -1,27 +1,48 @@
 .main-container {
     background: #fff;
-}
-.section-header {
-    text-align: left;
-    font-family: 'Merriweather', serif;
-    border-bottom: 2px solid #c0c0c0;
-    margin-bottom: 30px;
-    padding-left: 0;
-    padding-bottom: 15px;
-}
-.review-content {
-    display: flex;
-    justify-content: space-between;
-}
-.review-thumbnail {
-    flex: 0 0 175px;
-    margin-right: 30px;
+    padding: 0px;
 }
 
-.review-article {
-    flex: 1;
+.section-content {
+    max-width: 700px;
+    margin: 0px auto;
+}
+.review-title {
+    margin-top: 30px;
+}
+.review-title h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+.create-time {
+    color: #999999;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.review-article p {
+    margin-top: 20px;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
 }
 .create-author {
     text-align: right;
-    font-weight: bold;
+    margin-top: 30px;
 }
+.nav-review {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-review a {
+    color: #4e4949;
+}
+.nav-review a i {
+    font-size: 12px;
+    margin: 0 5px;
+}
+.nav-review a:hover {
+    color: #3498db;
+}
+

@@ -36,21 +36,11 @@ body {
     height: 100%;
     background: #000;
     z-index: -1;
+    transform: scaleX(0); 
     transition: transform 0.5s;
     transform-origin: top left;
     transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
 }
-.btn1::before{
-    /* Không hiển thị theo chiều ngang */
-    transform: scaleX(0); 
-}
-.btn1:hover::before {
-    /* Hiển thị kích thước 100% theo chiều ngang */
+.btn:hover::before {
     transform: scaleX(1);
-}
-.btn2::before{
-    transform: scaleY(0);
-}
-.btn2:hover::before {
-    transform: scaleY(1);
 }
