@@ -23,73 +23,78 @@
 
 <body>
     <div id="main">
-        <div class="header">
-            <div class="header-top container">
-                <!-- <div class="quote">
-                        ~~~ Mỗi cuốn sách là một bức tranh kỳ diệu về cuộc sống ~~~
-                        
-                    </div> -->
-                <div class="top-item">
-                    <ul>
-                        <li><a href="">Đăng nhập</a></li>
-                        <li><a href="">Về Bookstore</a></li>
-                        <li><a href="">Hỗ trợ</a></li>
-                        <li>
-                            <a href=""><i class="fab fa-facebook-f"></i></a>
-                            <a href=""><i class="fab fa-instagram"></i></a>
-                            <a href=""><i class="far fa-envelope"></i></a>
+        <div class="header shadow-sm">
+            <div class="header-box container">
+                <div id="header-logo">
+                    <img src="images/logo/Logo-white-bg.png" alt="" width="170px">
+                </div>
+                <div class="main-menu-box">
+                    <ul class="main-menu">
+                        <li class="dropdown book-category">
+                            <a href="category.html" class="dropdown-toggle">
+                                Sách trong nước
+                            </a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#">Văn học</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Sách Kinh tế</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Tâm lý - Kỹ năng sống</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Nuôi dạy con</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Sách thiếu nhi</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Tiểu sử - Hồi ký</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Sách học ngoại ngữ</a>
+                            </div>
                         </li>
+                        <li class="dropdown book-category">
+                            <a href="category.html" class="dropdown-toggle">
+                                Sách nước ngoài
+                            </a>               
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#">Fiction</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Business & management</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Personal development</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Children's books</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Dictionaries</a>
+                            </div>
+                        </li>
+                        
+                        <li><a href="">Phiên chợ cũ</a></li>
+                        <li><a href="">Review sách</a></li>
                     </ul>
-                </div>
-
-            </div>
-            <div id="header-bottom">
-                <div class="container">
-                    <div id="logo">
-                        <img src="images/logo/Logo-white-bg.png" alt="" width="180px">
+                    <div class="search-wp">
+                        <div class="search-logo">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="search-box">
+                            <input type="text" class="search-txt" placeholder="Nhập tên sách">
+                            <a href="" class="search-btn">Tìm kiếm</a>
+                        </div>
                     </div>
-                    <div class="main-menu">
-                        <ul>
-                            <li class="active"><a href="index.html">Trang chủ</a></li>
-                            <li class="book-category">
-                                <a href="category.html">Sách trong nước<i class="fas fa-sort-down"></i></a>
-                                <div class="sub-menu">
-                                    <ul>
-                                        <li><a href="category.html">Văn học</a></li>
-                                        <li><a href="category.html">Kinh tế</a></li>
-                                        <li><a href="category.html">Tâm lý - Kỹ năng sống</a></li>
-                                        <li><a href="category.html">Nuôi dạy con</a></li>
-                                        <li><a href="category.html">Sách thiếu nhi</a></li>
-                                        <li><a href="category.html">Tiểu sử - Hồi ký</a></li>
-                                        <li><a href="category.html">Văn học</a></li>
-                                        <li><a href="category.html">Sách học ngoại ngữ</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="book-category">
-                                <a href="category.html">Sách nước ngoài<i class="fas fa-sort-down"></i></a>
-                                <div class="sub-menu">
-                                    <ul>
-                                        <li><a href="category.html">Fiction</a></li>
-                                        <li><a href="category.html">Business & management</a></li>
-                                        <li><a href="category.html">Personal development</a></li>
-                                        <li><a href="category.html">Children's books</a></li>
-                                        <li><a href="category.html">Dictionaries</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li><a href="category.html">Sách bán chạy</a></li>
-                            <li><a href="category.html">Phiên chợ cũ</a></li>
-                            <li><a href="review.html">Review sách</a></li>
-                            <li><i class="fas fa-search"></i></li>
-                            <!-- <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>     -->
-                        </ul>
+                </div>
+                
+                <div class="user-wp">
+                    <div class="user-login">
+                        Đăng nhập
+                    </div>
+                    <div class="cart-box">
+                        <div class="cart-logo">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="order-number">0</div>
+                        
                     </div>
                 </div>
             </div>
-
         </div>
-        <div class="opacity-screen"></div>
         <div class="main-container">
 
             <div class="container review-section">

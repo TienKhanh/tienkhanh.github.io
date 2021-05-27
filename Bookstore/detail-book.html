@@ -23,74 +23,78 @@
 
 <body>
     <div id="main">
-        <div class="header">
-
-            <div class="header-top container">
-                <!-- <div class="quote">
-                        ~~~ Mỗi cuốn sách là một bức tranh kỳ diệu về cuộc sống ~~~
-                        
-                    </div> -->
-                <div class="top-item">
-                    <ul>
-                        <li><a href="">Đăng nhập</a></li>
-                        <li><a href="">Về Bookstore</a></li>
-                        <li><a href="">Hỗ trợ</a></li>
-                        <li>
-                            <a href=""><i class="fab fa-facebook-f"></i></a>
-                            <a href=""><i class="fab fa-instagram"></i></a>
-                            <a href=""><i class="far fa-envelope"></i></a>
+        <div class="header shadow-sm">
+            <div class="header-box container">
+                <div id="header-logo">
+                    <img src="images/logo/Logo-white-bg.png" alt="" width="170px">
+                </div>
+                <div class="main-menu-box">
+                    <ul class="main-menu">
+                        <li class="dropdown book-category">
+                            <a href="category.html" class="dropdown-toggle">
+                                Sách trong nước
+                            </a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#">Văn học</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Sách Kinh tế</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Tâm lý - Kỹ năng sống</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Nuôi dạy con</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Sách thiếu nhi</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Tiểu sử - Hồi ký</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Sách học ngoại ngữ</a>
+                            </div>
                         </li>
+                        <li class="dropdown book-category">
+                            <a href="category.html" class="dropdown-toggle">
+                                Sách nước ngoài
+                            </a>               
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#">Fiction</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Business & management</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Personal development</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Children's books</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Dictionaries</a>
+                            </div>
+                        </li>
+                        
+                        <li><a href="">Phiên chợ cũ</a></li>
+                        <li><a href="">Review sách</a></li>
                     </ul>
-                </div>
-
-            </div>
-            <div id="header-bottom">
-                <div class="container">
-                    <div id="logo">
-                        <img src="images/logo/Logo-white-bg.png" alt="" width="180px">
+                    <div class="search-wp">
+                        <div class="search-logo">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="search-box">
+                            <input type="text" class="search-txt" placeholder="Nhập tên sách">
+                            <a href="" class="search-btn">Tìm kiếm</a>
+                        </div>
                     </div>
-                    <div class="main-menu">
-                        <ul>
-                            <li class="active"><a href="index.html">Trang chủ</a></li>
-                            <li class="book-category">
-                                <a href="category.html">Sách trong nước<i class="fas fa-sort-down"></i></a>
-                                <div class="sub-menu">
-                                    <ul>
-                                        <li><a href="">Văn học</a></li>
-                                        <li><a href="">Kinh tế</a></li>
-                                        <li><a href="">Tâm lý - Kỹ năng sống</a></li>
-                                        <li><a href="">Nuôi dạy con</a></li>
-                                        <li><a href="">Sách thiếu nhi</a></li>
-                                        <li><a href="">Tiểu sử - Hồi ký</a></li>
-                                        <li><a href="">Văn học</a></li>
-                                        <li><a href="">Sách học ngoại ngữ</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="book-category">
-                                <a href="">Sách nước ngoài<i class="fas fa-sort-down"></i></a>
-                                <div class="sub-menu">
-                                    <ul>
-                                        <li><a href="">Fiction</a></li>
-                                        <li><a href="">Business & management</a></li>
-                                        <li><a href="">Personal development</a></li>
-                                        <li><a href="">Children's books</a></li>
-                                        <li><a href="">Dictionaries</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li><a href="">Sách bán chạy</a></li>
-                            <li><a href="">Phiên chợ cũ</a></li>
-                            <li><a href="">Review sách</a></li>
-                            <li><i class="fas fa-search"></i></li>
-                            <!-- <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>     -->
-                        </ul>
+                </div>
+                
+                <div class="user-wp">
+                    <div class="user-login">
+                        Đăng nhập
+                    </div>
+                    <div class="cart-box">
+                        <div class="cart-logo">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="order-number">0</div>
+                        
                     </div>
                 </div>
             </div>
-
         </div>
-        <div class="opacity-screen"></div>
         <div class="main-container">
             <!-- --------------------- book-detail ----------------------------  -->
             
@@ -103,48 +107,59 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="container detail-book shadow-sm section-box d-flex justify-content-around">
+                <div class="container detail-book  d-flex justify-content-around">
                     <div class="image-book-detail">
                         <img src="images/list-books/không còn đường lùi mới có thành công.jpg" alt="">
                     </div>
                     <div class="content-book-detail">
-                        <div class="book-title">
-                            <h1>Không còn đường lùi mới có thành công</h1>
+                        <div class="order-info">
+                            <div class="book-title">
+                                <h1>Không còn đường lùi mới có thành công</h1>
+                            </div>
+                            <div class="rating-box">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                                (&nbsp;5&nbsp;đánh giá)
+                            </div>
+    
+                            <div class="price-box">
+                                <div class="card-price">
+                                    <strong>Giá bìa: </strong>
+                                    <span class="old-price">92.000đ</span>
+                                </div>
+                                <div class="card-price">
+                                    <strong>Giá bán: </strong>
+                                    <span class="new-price">73.600đ</span>
+                                </div>
+                            </div>
+                            <div class="number-cart">
+                                <strong>Số lượng: </strong>
+                                <div class="quantity">
+                                    <input type="button" value="-" class="minus">
+                                    <input type="tel" class="qty" value="1">
+                                    <input type="button" value="+" class="plus">
+                                </div>
+                            </div>
+                            <div class="order-btn-box">
+                                <button class="buy-now">Mua ngay</button>
+                                <button class="add-to-cart">Thêm vào giỏ hàng</button>
+                            </div>
                         </div>
-                        <div class="rating-box">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                            <i class="far fa-star"></i>
-                            (&nbsp;5&nbsp;đánh giá)
-                        </div>
+                        <div class="detail-event-cart">
+                            <div class="event-title">Ưu đãi liên quan</div>
+                            <div class="event-item">Miễn phí vận chuyển từ đơn hàng 200k trong Hà Nội và từ 300k các khu vực khác</div>
+                            <div class="event-item">Giảm ngay 5% (tối đa 50k) cho lần đầu mua hàng</div>
+                            <div class="event-item">Nhập mã "QRMEGA": Giảm ngay 10%, thanh toán qua VNPAY</div>
+                            <div class="event-item">Hoàn 30%, tối đa 100K, thanh toán ví Moca</div>
 
-                        <div class="price-box">
-                            <div class="card-price">Giá bìa: <span class="old-price">92.000đ</span></div>
-                            <div class="card-price">Giá bán: <span class="new-price">73.600đ</span></div>
-                        </div>
-                        <div class="quantity">
-                            Số lượng:
-                            <input type="button" value="-" class="minus">
-                            <input type="number" class="input-quantity" step="1" min="1" max="100" value="1">
-                            <input type="button" value="+" class="plus">
-                        </div>
-                        <div class="buy-cart">
-                            <button class="buy-now">Mua ngay</button>
-                            <button class="add-to-cart">Thêm vào giỏ hàng</button>
-                        </div>
-
-                        <div class="detail-support">
-                            <div class="shipping">Miễn phí vận chuyển cho đơn hàng từ 200k trong Hà Nội và từ 250k tại
-                                các khu vực khác. <a href="">Xem chi tiết</a></div>
-                            <div class="hot-line">Hotline: 0987 889 988</div>
-                            <div class="support-email">Email: support.vnbookteam@gmail.com</div>
                         </div>
                     </div>
 
                 </div>
-                <div class="container related-book shadow-sm section-box">
+                <div class="container related-book ">
                     <div
                         class="section-header col-xl-12 col-md-12 col-sm-12 d-flex justify-content-between align-items-center">
                         <div class="section-title">Sách liên quan</div>
@@ -283,7 +298,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="container desc-detail shadow-sm section-box">
+                <div class="container desc-detail ">
                     <div
                         class="section-header col-xl-12 col-md-12 col-sm-12 d-flex justify-content-between align-items-center">
                         <div class="section-title">Giới thiệu sách</div>
@@ -307,7 +322,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="container book-attribute shadow-sm section-box">
+                <div class="container book-attribute ">
                     <div
                         class="section-header col-xl-12 col-md-12 col-sm-12 d-flex justify-content-between align-items-center">
                         <div class="section-title">Chi tiết sách</div>
@@ -331,7 +346,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="container book-rate shadow-sm section-box">
+                <div class="container book-rate ">
                     4
                 </div>
         </div>

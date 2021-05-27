@@ -6,35 +6,45 @@
     margin-bottom: 20px;
 }
 /* DETAIL BOOK  */
-.detail-book {
-   
-    padding: 20px 0;
-}
 .image-book-detail {
     flex-basis: 35%;
     text-align: center;
+    padding: 20px;
+    border-right: 1px solid #e4e4e4;
 }
 
 .image-book-detail img {
-    /* display: block;
-    width: 80%;
-    margin: 0 auto; */
     width: 100%;
 }
 
 .content-book-detail {
-    flex-basis: 60%;
+    flex-basis: 65%;
     position: relative;
+    padding: 20px;
 }
 
 .content-book-detail .book-title h1 {
-    font-size: 24px;
-    color: #121212;
-    margin-bottom: 10px;
-    
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #333;
+    font-family: 'Roboto',sans-serif !important;
+    line-height: 1.5em;
+    overflow-wrap: break-word;
+    padding-bottom: 8px;
+    margin: 0;
 }
-.rating-box {
+.rating-box, .number-cart {
+    margin-top: 0;
     margin-bottom: 20px;
+}
+
+.number-cart {
+    padding: 20px;
+    background: #f0f0f0;
+    border-radius: 4px;
+}
+.order-btn-box {
+    margin: 30px 0 20px 0;
 }
 
 .card-price .old-price {
@@ -51,11 +61,6 @@
 .quantity .minus {
     margin-left: 30px;
 }
-.quantity input{
-    background: none;
-    border: 1px solid #ddd;
-    padding: 4px 11px;
-}
 
 .buy-now, .add-to-cart {
     color: #fff;
@@ -65,10 +70,6 @@
     width: 200px;
 }
 
-.buy-cart {
-    position: absolute;
-    bottom: 0px;
-}
 
 .buy-now {
     background: #FC4B4B;
@@ -100,4 +101,42 @@
 .attribute-content p {
     /* margin-left: 30px; */
     margin: 5px 30px;
+}
+
+.detail-event-cart {
+    margin-top: 20px;
+}
+.event-title {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+.event-item {
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 5px;
+    color: #2F80ED;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
+
+.event-item::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f005";
+    margin-right: 10px;
+    background: #2F80ED;
+    color: #fff;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 18px;
+    text-align: center;
+    font-size: 9px;
+}
+.event-item::after {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f054";
+    padding-left: 3px;
 }

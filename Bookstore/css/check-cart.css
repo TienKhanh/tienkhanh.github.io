@@ -32,23 +32,7 @@
     font-size: 18px;
     display: block;
 }
-.quantity {
-    display: inline-flex;
-}
-.quantity .minus, .quantity .plus {
-    width: 30px;
-    height: 30px;
-    border: 1px solid #ddd;
-    background-color: #fff;
-}
-.quantity .qty {
-    width: 50px;
-    height: 30px;
-    border: 1px solid #ddd;
-    text-align: center;
-    border-left: none;
-    border-right: none;
-}
+
 
 
 
