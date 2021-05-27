@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.btn {
+    background: linear-gradient(to left, #e67e22 50%, #d35400 50%) right;
+    background-size: 200%;
+    border: none;
+    padding: 12px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    min-width: 200px;
+    margin: 10px;
+    font-family: "montserrat", sans-serif;
+    font-weight: 600;
+    transition: 0.7s cubic-bezier(0.5, 1.6, .4, .7);
+    position: relative;
+}
+.btn:hover {
+    background-position: left;
+}

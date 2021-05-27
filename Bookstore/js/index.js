@@ -2,6 +2,10 @@ $(document).ready(function () {
     $(".book-category").hover(function () {
         $(".opacity-screen").toggle();
     });
+
+    $(".search-logo").click(()=>{
+        $(".search-box").toggleClass("dropdown-search-open");
+    });
     function formatNumber(num) {
         return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.')
     }
