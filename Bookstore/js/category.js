@@ -7,31 +7,34 @@ $(document).ready(function () {
     }
 
     $("a.category-filter").click((event) => {
+        var s = "";
         event.preventDefault();
         let key = event.currentTarget.id;
 
         if (cat_filter[key]) {
-            delete cat_filter[key]
+            delete cat_filter[key];
         } else {
             cat_filter[key] = key;
         }
-
+        console.log(cat_filter)
+        // debugger
         let search = "";
-        for(item in cat_filter){
+        for (item in cat_filter) {
             search += `category_like=${item}&`;
         }
-        if(search != ""){
-           s = search.slice(0,search.length-1);
+        if (search != "") {
+            s = search.slice(0, search.length - 1);
         }
+        console.log(s);
         let search_url = `http://localhost:3000/book_items?${s}`;
+
         console.log(search_url)
         $.get(search_url, function (data) {
+            let product_list = $(".category-product .product-list");
+            let list_str = "";
             if (data && data.length > 0) {
-                let product_list = $(".category-product .product-list");
-                let list_str = "";
-                product_list.html("");
                 data.forEach(item => {
-                    list_str +=`
+                    list_str += `
                     <div class="book-item col-md-3">
                         <div class="book-image">
                             <a href="detail-book.html">
@@ -60,7 +63,10 @@ $(document).ready(function () {
                     `;
                 });
                 // console.log(list_str)
+                product_list.html("");
                 product_list.append(list_str);
+            } else {
+                product_list.html("Không tìm thấy kết quả nào.");
             }
         });
     });

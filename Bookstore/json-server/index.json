@@ -10,8 +10,8 @@
             "review": 18,
             "flashsale":false,
             "monthly_ranking": false,
-            "category": "vanhoc",
-            "suplier": "backviet, nhanam"
+            "category": "nuoidaycon",
+            "suplier": "nhanam"
         },
         {
             "id": 2,
@@ -23,8 +23,8 @@
             "review": 20,
             "flashsale":true,
             "monthly_ranking": false,
-            "category": "sachkinhte",
-            "suplier": "backviet, nhanam"
+            "category": "tieusu-hoiky",
+            "suplier": "nxbtre"
         },
         {
             "id": 3,
@@ -36,7 +36,8 @@
             "review": 10,
             "flashsale":true,
             "monthly_ranking": false,
-            "category": "vanhoc"
+            "category": "vanhoc",
+            "suplier": "nxbtre"
         },
         {
             "id": 4,
@@ -48,7 +49,8 @@
             "review": 20,
             "flashsale":true,
             "monthly_ranking": false,
-            "category": "vanhoc"
+            "category": "tieusu-hoiky",
+            "suplier": "nxbtre"
         },
         {
             "id": 5,
@@ -59,7 +61,9 @@
             "rating":5,
             "review": 20,
             "flashsale":true,
-            "monthly_ranking": false
+            "monthly_ranking": false,
+            "category": "tamly-kynangsong",
+            "suplier": "nxbtre"
         },
         {
             "id": 6,
@@ -71,120 +75,138 @@
             "review": 10,
             "flashsale":true,
             "monthly_ranking": false,
-            "category": "vanhoc"
+            "category": "vanhoc",
+            "suplier": "nhanam"
         },
         {
             "id": 7,
             "title": "Đừng nói chuyện với cô ấy",
-            "img": "",
+            "img": "https://github.com/TienKhanh/tienkhanh.github.io/blob/main/Bookstore/images/list-books/%C4%90%E1%BB%ABng%20n%C3%B3i%20chuy%E1%BB%87n%20v%E1%BB%9Bi%20c%C3%B4%20%E1%BA%A5y%20-100-126-20.jpg?raw=true",
             "new_price":100000,
             "old_price":126000,
             "rating":5,
             "review": 10,
             "flashsale":true,
             "monthly_ranking": false,
-            "category": "vanhoc"
+            "category": "vanhoc",
+            "suplier": "nhanam"
         },
         {
             "id": 8,
             "title": "Nguồn gốc tội lỗi",
-            "img": "",
+            "img": "https://raw.githubusercontent.com/TienKhanh/tienkhanh.github.io/main/Bookstore/images/list-books/ngu%E1%BB%93n%20g%E1%BB%91c%20t%E1%BB%99i%20l%E1%BB%97i%20-137-168-18.jpg",
             "new_price":137000,
             "old_price":168000,
             "rating":5,
             "review": 10,
             "flashsale":false,
-            "monthly_ranking": true
+            "monthly_ranking": true,
+            "category": "vanhoc",
+            "suplier": "nhanam"
         },
         {
             "id": 9,
             "title": "Tâm lý học tội phạm",
-            "img": "",
+            "img": "https://raw.githubusercontent.com/TienKhanh/tienkhanh.github.io/main/Bookstore/images/list-books/t%C3%A2m%20l%C3%BD%20h%E1%BB%8Dc%20t%E1%BB%99i%20ph%E1%BA%A1m%20-%20122-149-18.jpg",
             "new_price":122000,
             "old_price":149000,
             "rating":5,
             "review": 10,
             "flashsale":false,
-            "monthly_ranking": true
+            "monthly_ranking": true,
+            "category": "tamly-kynangsong",
+            "suplier": "nhanam"
         },
         {
             "id": 10,
             "title": "Phẩm chất tốt của các doanh nhân",
-            "img": "",
+            "img": "https://github.com/TienKhanh/tienkhanh.github.io/blob/main/Bookstore/images/list-books/Ph%E1%BA%A9m%20Ch%E1%BA%A5t%20T%E1%BB%91t%20C%E1%BB%A7a%20C%C3%A1c%20Doanh%20Nh%C3%A2n%20-23.5-47.50.jpg?raw=true",
             "new_price":23500,
             "old_price":475000,
             "rating":5,
             "review": 10,
             "flashsale":false,
-            "monthly_ranking": true
+            "monthly_ranking": true,
+            "category": "thieunhi",
+            "suplier": "nhanam"
         },
         {
             "id": 11,
             "title": "Cái bóng của bí mật",
-            "img": "",
+            "img": "https://github.com/TienKhanh/tienkhanh.github.io/blob/main/Bookstore/images/list-books/C%C3%A1i%20B%C3%B3ng%20C%E1%BB%A7a%20B%C3%AD%20M%E1%BA%ADt%20-%2054-108-50.jpg?raw=true",
             "new_price":54000,
             "old_price":108000,
             "rating":5,
             "review": 18,
             "flashsale":false,
-            "monthly_ranking": true
+            "monthly_ranking": true,
+            "category": "vanhoc",
+            "suplier": "nhanam"
         },
         {
             "id": 12,
             "title": "Kiếp nào ta cũng tìm thấy nhau",
-            "img": "",
+            "img": "https://github.com/TienKhanh/tienkhanh.github.io/blob/main/Bookstore/images/list-books/Ki%E1%BA%BFp%20N%C3%A0o%20Ta%20C%C5%A9ng%20T%C3%ACm%20Th%E1%BA%A5y%20Nhau%20-62-85-27.jpg?raw=true",
             "new_price":62000,
             "old_price":87000,
             "rating":5,
             "review": 6,
             "flashsale":true,
             "monthly_ranking": true,
-            "category": "vanhoc"
+            "category": "tamly-kynangsong",
+            "suplier": "nhanam"
         },
         {
             "id": 13,
             "title": "Hoàng tử bé",
-            "img": "",
+            "img": "https://github.com/TienKhanh/tienkhanh.github.io/blob/main/Bookstore/images/list-books/Ho%C3%A0ng%20T%E1%BB%AD%20B%C3%A9%20-22.5-25-10.jpg?raw=true",
             "new_price":22500,
             "old_price":25000,
             "rating":5,
             "review": 10,
             "flashsale":false,
             "monthly_ranking": true,
-            "category": "vanhoc"
+            "category": "thieunhi",
+            "suplier": "nhanam"
         },
         {
             "id": 14,
             "title": "Cà phê cùng Tony",
-            "img": "",
+            "img": "https://github.com/TienKhanh/tienkhanh.github.io/blob/main/Bookstore/images/list-books/C%C3%A0%20Ph%C3%AA%20C%C3%B9ng%20Tony%20-63-90-30.jpg?raw=true",
             "new_price":63000,
             "old_price":90000,
             "rating":5,
             "review": 10,
             "flashsale":false,
-            "monthly_ranking": true
+            "monthly_ranking": true,
+            "category": "vanhoc",
+            "suplier": "nhanam"
         },
         {
             "id": 15,
             "title": "Món quà từ cánh chim",
-            "img": "",
+            "img": "https://github.com/TienKhanh/tienkhanh.github.io/blob/main/Bookstore/images/list-books/M%C3%B3n%20Qu%C3%A0%20T%E1%BB%AB%20C%C3%A1nh%20Chim%20-82.5-165-50.png?raw=true",
             "new_price":82000,
             "old_price":165000,
             "rating":5,
             "review": 20,
             "flashsale":false,
-            "monthly_ranking": true
+            "monthly_ranking": true,
+            "category": "vanhoc",
+            "suplier": "nhanam"
         },
         {
             "id": 16,
             "title": "Đời ngắn đừng ngủ dài",
-            "img": "",
+            "img": "https://github.com/TienKhanh/tienkhanh.github.io/blob/main/Bookstore/images/list-books/%C4%90%E1%BB%9Di%20Ng%E1%BA%AFn%20%C4%90%E1%BB%ABng%20Ng%E1%BB%A7%20D%C3%A0i%20-%2057-75-24.jpg?raw=true",
             "new_price":57000,
             "old_price":75000,
             "rating":5,
             "review": 18,
             "flashsale":false,
-            "monthly_ranking": true
+            "monthly_ranking": true,
+            "category": "tamly-kynangsong",
+            "suplier": "nhanam"
         }
     ]
 }

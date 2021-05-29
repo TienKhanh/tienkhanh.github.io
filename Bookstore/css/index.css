@@ -1,4 +1,3 @@
-
 .main-container {
     background: none;
     padding: 0;
@@ -20,19 +19,21 @@
     padding-bottom: 50px;
 }
 
-
-.main-container .container:last-child{
+.main-container .container:last-child {
     margin-bottom: 0;
 }
+
 .bestseller-books, .see-list, .review-books {
     background: none!important;
 }
 
 /* SUPPORT  */
+
 .support-box {
     background: none!important;
     box-shadow: none!important;
 }
+
 .support-item {
     flex-basis: 23%;
     color: #121212;
@@ -44,8 +45,9 @@
 .support-item:hover {
     color: #f26a19;
 }
+
 .support-item:hover i {
-    color:#f26a19;
+    color: #f26a19;
 }
 
 .support-icon {
@@ -58,23 +60,26 @@
     position: relative;
     color: #f26a19;
 }
+
 .support-icon i {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 .support-info {
     text-align: left;
 }
+
 .support-title {
     font-size: 16px;
     font-weight: bold;
 }
+
 .support-desc {
     font-size: 13px;
 }
-
 
 /* CONTENT */
 
@@ -92,14 +97,12 @@
     background: #16445E;
 }
 
-
-
-
-
 /* ----- count down ------- */
+
 .countdown {
     color: #333;
 }
+
 .countdown .day, .countdown .hour, .countdown .minute, .countdown .second {
     display: inline-block;
     padding: 3px 5px;
@@ -140,12 +143,13 @@
     text-align: center;
     padding: 0 125px;
 }
+
 .bestseller-item {
     background: #fff;
     position: relative;
 }
 
-.bestseller-item .book-image{
+.bestseller-item .book-image {
     padding: 0;
 }
 
@@ -157,14 +161,12 @@
     position: absolute;
     top: -15px;
     right: 0;
-    background:#FC4B4B;
+    background: #FC4B4B;
     color: #fff;
     padding: 5px 15px;
     font-size: 12px;
     transform: skew(0deg, -6deg);
 }
-
-
 
 /* REVIEW  */
 
@@ -313,13 +315,11 @@
     transition: .3s ease-out;
     text-decoration: none;
     border: 1px solid #8e9eae;
-    
 }
 
-.see-list .info a:hover{
+.see-list .info a:hover {
     background: #34495e;
     color: #fff;
-    
 }
 
 .release-box {
@@ -328,9 +328,11 @@
     display: flex;
     justify-content: space-between;
 }
+
 .release-section-header {
     flex: 1;
 }
+
 .release-list-box {
     width: 875px;
 }
@@ -340,3 +342,7 @@
     padding-bottom: 20px;
 }
 
+.owl-carousel .owl-item {
+    width: auto;
+    height: 100%;
+}

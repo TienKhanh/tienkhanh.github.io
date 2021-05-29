@@ -170,11 +170,24 @@ a {
     flex-basis: 135px;
     justify-content: flex-end;
 }
-.user-login {
+.user-login a{
+    display: inline-block;
     padding: 5px 13px;
     border: 1px solid #666666;
+    color: #000;
     border-radius: 3px;
+    background: linear-gradient(to left, #fff 50%, #000 50%) right;
+    background-size: 200%;
+    transition: all 0.7s cubic-bezier(0.5,1.6,0.4,0.7);
 }
+
+.user-login:hover a {
+    background-position: left;
+    color: #fff;
+}
+
+
+
 .cart-box {
     padding: 5px 7px 5px 10px;
     position: relative;
