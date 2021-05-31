@@ -21,30 +21,30 @@
 .sidebar-content {
     padding: 1rem;
 }
-.sidebar-content span {
-    display: block;
-}
-.sidebar-content span a {
-    display: inline-block;
+.sidebar-content .checkbox {
     padding-bottom: 0.6rem;
     color: #121212;
     text-decoration: none;
-}
-.sidebar-content span:before {
-    display: inline-block;
     cursor: pointer;
-    content: " ";
-    width: 17px;
-    height: 17px;
-    border: 1px solid #ccc;
-    background-color: transparent;
-    border-radius: 2px;
-    position: relative;
-    top: 2px;
-    margin-right: 3px;
 }
 
-.sidebar-content span:hover a {
+.sidebar-content .checkbox:before {
+    cursor: pointer;
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 400; 
+    content: "\f0c8";
+    font-size: 17px;
+    color: rgb(156, 156, 156);
+    margin-right: 5px;
+}
+
+
+.sidebar-content .checkbox:hover{
+    color: #f26a19;
+}
+.sidebar-content .checkbox.checked {color: #f26a19;}
+.sidebar-content .checkbox.checked:before{
+    content: "\f14a";
     color: #f26a19;
 }
 
@@ -127,6 +127,8 @@
     margin-top: 30px;
 }
 
-
+.no-item {
+    padding: 12px 25px;
+}
 
 

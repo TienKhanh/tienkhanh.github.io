@@ -10,8 +10,9 @@
             "review": 18,
             "flashsale":false,
             "monthly_ranking": false,
-            "category": "nuoidaycon",
-            "suplier": "nhanam"
+            "category": "sachtrongnuoc,nuoidaycon",
+            "supplier": "nhanam",
+            "created_date": "2021-05-29T00:01:00.000Z"
         },
         {
             "id": 2,
@@ -23,8 +24,9 @@
             "review": 20,
             "flashsale":true,
             "monthly_ranking": false,
-            "category": "tieusu-hoiky",
-            "suplier": "nxbtre"
+            "category": "sachtrongnuoc,tieusu-hoiky",
+            "supplier": "nxbtre",
+            "created_date": "2021-05-29T00:01:00.000Z"
         },
         {
             "id": 3,
@@ -36,8 +38,9 @@
             "review": 10,
             "flashsale":true,
             "monthly_ranking": false,
-            "category": "vanhoc",
-            "suplier": "nxbtre"
+            "category": "sachtrongnuoc,vanhoc",
+            "supplier": "nxbtre",
+            "created_date": "2021-05-29T00:01:00.000Z"
         },
         {
             "id": 4,
@@ -49,8 +52,9 @@
             "review": 20,
             "flashsale":true,
             "monthly_ranking": false,
-            "category": "tieusu-hoiky",
-            "suplier": "nxbtre"
+            "category": "sachtrongnuoc,tieusu-hoiky",
+            "supplier": "nxbtre",
+            "created_date": "2021-05-28T00:01:00.000Z"
         },
         {
             "id": 5,
@@ -62,8 +66,9 @@
             "review": 20,
             "flashsale":true,
             "monthly_ranking": false,
-            "category": "tamly-kynangsong",
-            "suplier": "nxbtre"
+            "category": "sachtrongnuoc,tamly-kynangsong",
+            "supplier": "nxbtre",
+            "created_date": "2021-05-27T00:01:00.000Z"
         },
         {
             "id": 6,
@@ -75,8 +80,9 @@
             "review": 10,
             "flashsale":true,
             "monthly_ranking": false,
-            "category": "vanhoc",
-            "suplier": "nhanam"
+            "category": "sachtrongnuoc,vanhoc",
+            "supplier": "nhanam",
+            "created_date": "2021-05-27T00:01:00.000Z"
         },
         {
             "id": 7,
@@ -88,8 +94,9 @@
             "review": 10,
             "flashsale":true,
             "monthly_ranking": false,
-            "category": "vanhoc",
-            "suplier": "nhanam"
+            "category": "sachtrongnuoc,vanhoc",
+            "supplier": "nhanam",
+            "created_date": "2021-05-26T00:01:00.000Z"
         },
         {
             "id": 8,
@@ -101,8 +108,10 @@
             "review": 10,
             "flashsale":false,
             "monthly_ranking": true,
-            "category": "vanhoc",
-            "suplier": "nhanam"
+            "category": "sachtrongnuoc,vanhoc",
+            "supplier": "nhanam",
+            "created_date": "2021-05-26T00:01:00.000Z"
+
         },
         {
             "id": 9,
@@ -114,8 +123,10 @@
             "review": 10,
             "flashsale":false,
             "monthly_ranking": true,
-            "category": "tamly-kynangsong",
-            "suplier": "nhanam"
+            "category": "sachtrongnuoc,tamly-kynangsong",
+            "supplier": "nhanam",
+            "created_date": "2021-05-25T00:01:00.000Z"
+
         },
         {
             "id": 10,
@@ -127,8 +138,10 @@
             "review": 10,
             "flashsale":false,
             "monthly_ranking": true,
-            "category": "thieunhi",
-            "suplier": "nhanam"
+            "category": "sachtrongnuoc,thieunhi",
+            "supplier": "nhanam",
+            "created_date": "2021-05-23T00:01:00.000Z"
+
         },
         {
             "id": 11,
@@ -140,8 +153,10 @@
             "review": 18,
             "flashsale":false,
             "monthly_ranking": true,
-            "category": "vanhoc",
-            "suplier": "nhanam"
+            "category": "sachtrongnuoc,vanhoc",
+            "supplier": "nhanam",
+            "created_date": "2021-05-23T00:01:00.000Z"
+
         },
         {
             "id": 12,
@@ -153,8 +168,10 @@
             "review": 6,
             "flashsale":true,
             "monthly_ranking": true,
-            "category": "tamly-kynangsong",
-            "suplier": "nhanam"
+            "category": "sachtrongnuoc,tamly-kynangsong",
+            "supplier": "nhanam",
+            "created_date": "2021-05-22T00:01:00.000Z"
+
         },
         {
             "id": 13,
@@ -166,8 +183,10 @@
             "review": 10,
             "flashsale":false,
             "monthly_ranking": true,
-            "category": "thieunhi",
-            "suplier": "nhanam"
+            "category": "sachtrongnuoc,thieunhi",
+            "supplier": "nhanam",
+            "created_date": "2021-05-22T00:01:00.000Z"
+
         },
         {
             "id": 14,
@@ -179,8 +198,10 @@
             "review": 10,
             "flashsale":false,
             "monthly_ranking": true,
-            "category": "vanhoc",
-            "suplier": "nhanam"
+            "category": "sachtrongnuoc,vanhoc",
+            "supplier": "nhanam",
+            "created_date": "2021-05-22T00:01:00.000Z"
+
         },
         {
             "id": 15,
@@ -192,8 +213,10 @@
             "review": 20,
             "flashsale":false,
             "monthly_ranking": true,
-            "category": "vanhoc",
-            "suplier": "nhanam"
+            "category": "sachtrongnuoc,vanhoc",
+            "supplier": "nhanam",
+            "created_date": "2021-05-21T00:01:00.000Z"
+
         },
         {
             "id": 16,
@@ -205,8 +228,10 @@
             "review": 18,
             "flashsale":false,
             "monthly_ranking": true,
-            "category": "tamly-kynangsong",
-            "suplier": "nhanam"
+            "category": "sachtrongnuoc,tamly-kynangsong",
+            "supplier": "nhanam",
+            "created_date": "2021-05-20T00:01:00.000Z"
+
         }
     ]
 }

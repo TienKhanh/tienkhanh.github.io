@@ -1,34 +1,58 @@
 $(document).ready(function () {
-    let cat_filter = {};
-    let origin_url = window.location.href;
-
     function formatNumber(num) {
         return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.')
     }
 
-    $("a.category-filter").click((event) => {
-        var s = "";
-        event.preventDefault();
-        let key = event.currentTarget.id;
+    var category_filter = {};
+    var supplier_filter = {};
 
-        if (cat_filter[key]) {
-            delete cat_filter[key];
-        } else {
-            cat_filter[key] = key;
+    var filter_item = $(".filter-item");
+
+    filter_item.click((event) => {
+        event.target.classList.toggle("checked");
+
+        let search_type = event.target.getAttribute("filter-type");
+        let search_key = event.currentTarget.id;
+        let search_str = "";
+
+        // Thêm hoặc bớt phần tử của các bộ lọc
+        if(search_type == "category"){
+            if (category_filter[search_key]) {
+                delete category_filter[search_key];
+            } else {
+                category_filter[search_key] = search_key;
+            }
+            
         }
-        console.log(cat_filter)
-        // debugger
-        let search = "";
-        for (item in cat_filter) {
-            search += `category_like=${item}&`;
+        if(search_type == "supplier"){
+            if (supplier_filter[search_key]) {
+                delete supplier_filter[search_key];
+            } else {
+                supplier_filter[search_key] = search_key;
+            }
+            
         }
-        if (search != "") {
-            s = search.slice(0, search.length - 1);
+
+        // Chạy vòng lặp qua từng phần tử của các bộ lọc
+        for (item in category_filter) {
+            search_str += `category_like=${item}&`;
         }
-        console.log(s);
-        let search_url = `http://localhost:3000/book_items?${s}`;
+
+        for (item in supplier_filter) {
+            search_str += `supplier_like=${item}&`;
+        }
+
+        // Bỏ & cuối cùng của search string
+        if (search_str != "") {
+            search_str = search_str.slice(0, search_str.length - 1);
+        }
+        
+        // Tạo url vào json server và in ra kết quả
+        
+        let search_url = `http://localhost:3000/book_items?${search_str}`;
 
         console.log(search_url)
+
         $.get(search_url, function (data) {
             let product_list = $(".category-product .product-list");
             let list_str = "";
@@ -37,14 +61,14 @@ $(document).ready(function () {
                     list_str += `
                     <div class="book-item col-md-3">
                         <div class="book-image">
-                            <a href="detail-book.html">
+                            <a href="detail-book.html?id=${item.id}">
                                 <img src="${item.img}" alt="">
                             </a>
 
                         </div>
                         <div class="book-info">
                             <div class="book-section-header">
-                                <a href="detail-book.html" class="book-title">
+                                <a href="detail-book.html?id=${item.id}" class="book-title">
                                     <h3>${item.title}</h3>
                                 </a>
                             </div>
@@ -62,17 +86,13 @@ $(document).ready(function () {
                     </div>
                     `;
                 });
-                // console.log(list_str)
                 product_list.html("");
                 product_list.append(list_str);
             } else {
-                product_list.html("Không tìm thấy kết quả nào.");
+                product_list.html(`<p class="no-item">Không tìm thấy kết quả nào</p>`);
             }
         });
     });
-
-
-
     // let vanhoc_input = $('.filter_input')
     // vanhoc_input.click((event)=>{
     //     console.log(`event`, event)

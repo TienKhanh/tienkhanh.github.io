@@ -1,15 +1,32 @@
 $(document).ready(function () {
-    $(".book-category").hover(function () {
-        $(".opacity-screen").toggle();
+
+    $('html').on('click', function (event) {
+        var target = $(event.target);
+        console.log(target)
+        if (target.is('i.fas.fa-search')) {
+            $(".search-box").toggleClass("dropdown-search-open");
+        } else {
+            $(".search-box").removeClass("dropdown-search-open");
+        }
     });
 
-    $(".search-logo").click(() => {
-        $(".search-box").toggleClass("dropdown-search-open");
-    });
+
     function formatNumber(num) {
         return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.')
     }
+    
+    $(".btn-back-top").hide();
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 300) {
+            $(".btn-back-top").show();
+        } else {
+            $(".btn-back-top").hide();
+        }
+    });
 
+    $(".btn-back-top").click(function () {
+        $("html, body").animate({ scrollTop: 0 }, 800);
+    });
 
     // http://localhost:3000/book_items?category_like=2&&category_like=1&&supier_like=2
 
@@ -83,10 +100,6 @@ $(document).ready(function () {
             });
 
             $(".book-item").height("391.21px");
-            var monthly_ranking = document.querySelector(".ranking-books .book-list-box");
-            var flashsale = document.querySelector(".flashsale-books .owl-carousel");
-            console.log("Flashsale: ", flashsale.offsetHeight);
-            console.log("Monthly: ", monthly_ranking.scrollHeight);
         }
     });
 
