@@ -145,22 +145,11 @@
                                     <h4>Giá bán</h4>
                                 </div>
                                 <div class="sidebar-content">
-                                    <span class="checkbox">
-                                        <a href="">
-                                            < 50.000đ</a>
-                                    </span>
-                                    <span class="checkbox">
-                                        <a href="">Từ 50.000đ - 100.000đ</a>
-                                    </span>
-                                    <span class="checkbox">
-                                        <a href="">Từ 100.000đ - 150.000đ</a>
-                                    </span>
-                                    <span class="checkbox">
-                                        <a href="">Từ 150.000đ - 200.000đ</a>
-                                    </span>
-                                    <span class="checkbox">
-                                        <a href=""> >= 200.000đ</a>
-                                    </span>
+                                    <div class="checkbox filter-item" filter-type="price" id="1">< 50.000đ</div>
+                                    <div class="checkbox filter-item" filter-type="price" id="2">Từ 50.000đ - 100.000đ</div>
+                                    <div class="checkbox filter-item" filter-type="price" id="3">Từ 100.000đ - 150.000đ</div>
+                                    <div class="checkbox filter-item" filter-type="price" id="4">Từ 150.000đ - 200.000đ</div>
+                                    <div class="checkbox filter-item" filter-type="price" id="5">>= 200.000đ</div>
                                 </div>
                             </div>
                         </div>
@@ -174,24 +163,26 @@
                             <div class="category-product">
                                 <ul class="sort-list">
                                     <li>
-                                        <a href="" class="active">Hàng mới</a>
+                                        <a href class="active" sort-view="created_at">Hàng mới</a>
                                     </li>
                                     <li>
-                                        <a href="">Bán chạy</a>
+                                        <a href sort-view="number_order">Bán chạy</a>
                                     </li>
                                     <li>
-                                        <a href="">Giảm giá nhiều</a>
+                                        <a href sort-view="discount">Giảm giá nhiều</a>
                                     </li>
                                     <li>
-                                        <a href="">Giá thấp</a>
+                                        <a href sort-view="min_price">Giá thấp</a>
                                     </li>
                                     <li>
-                                        <a href="">Giá cao</a>
+                                        <a href sort-view="max_price">Giá cao</a>
                                     </li>
                                 </ul>
                                 <div class="product-list row">
                                     
-                                    <div class="book-item col-md-3">
+                                    <!-- Dữ liệu lấy từ json-server  -->
+
+                                    <!-- <div class="book-item col-md-3">
                                         <div class="book-image">
                                             <a href="detail-book.html">
                                                 <img src="images/list-books/Để Con Được Ốm -76-95-20.jpg" alt="">
@@ -215,286 +206,8 @@
                                                 &nbsp;5&nbsp;đánh giá
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="book-item col-md-3">
-                                        <div class="book-image">
-                                            <a href="">
-                                                <img src="images/list-books/Để Con Được Ốm -76-95-20.jpg" alt="">
-                                            </a>
-
-                                        </div>
-                                        <div class="book-info">
-                                            <div class="book-section-header">
-                                                <a href="" class="book-title">
-                                                    <h3>Để con được ốm</h3>
-                                                </a>
-                                            </div>
-                                            <div class="new-price">69.700đ</div>
-                                            <div class="old-price">85.000đ</div>
-                                            <div class="rating-box">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star-half-alt"></i>
-                                                <i class="far fa-star"></i>
-                                                &nbsp;5&nbsp;đánh giá
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="book-item col-md-3">
-                                        <div class="book-image">
-                                            <a href="">
-                                                <img src="images/list-books/Để Con Được Ốm -76-95-20.jpg" alt="">
-                                            </a>
-
-                                        </div>
-                                        <div class="book-info">
-                                            <div class="book-section-header">
-                                                <a href="" class="book-title">
-                                                    <h3>Để con được ốm</h3>
-                                                </a>
-                                            </div>
-                                            <div class="new-price">69.700đ</div>
-                                            <div class="old-price">85.000đ</div>
-                                            <div class="rating-box">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star-half-alt"></i>
-                                                <i class="far fa-star"></i>
-                                                &nbsp;5&nbsp;đánh giá
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="book-item col-md-3">
-                                        <div class="book-image">
-                                            <a href="">
-                                                <img src="images/list-books/Để Con Được Ốm -76-95-20.jpg" alt="">
-                                            </a>
-
-                                        </div>
-                                        <div class="book-info">
-                                            <div class="book-section-header">
-                                                <a href="" class="book-title">
-                                                    <h3>Để con được ốm</h3>
-                                                </a>
-                                            </div>
-                                            <div class="new-price">69.700đ</div>
-                                            <div class="old-price">85.000đ</div>
-                                            <div class="rating-box">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star-half-alt"></i>
-                                                <i class="far fa-star"></i>
-                                                &nbsp;5&nbsp;đánh giá
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="book-item col-md-3">
-                                        <div class="book-image">
-                                            <a href="">
-                                                <img src="images/list-books/Để Con Được Ốm -76-95-20.jpg" alt="">
-                                            </a>
-
-                                        </div>
-                                        <div class="book-info">
-                                            <div class="book-section-header">
-                                                <a href="" class="book-title">
-                                                    <h3>Để con được ốm</h3>
-                                                </a>
-                                            </div>
-                                            <div class="new-price">69.700đ</div>
-                                            <div class="old-price">85.000đ</div>
-                                            <div class="rating-box">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star-half-alt"></i>
-                                                <i class="far fa-star"></i>
-                                                &nbsp;5&nbsp;đánh giá
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="book-item col-md-3">
-                                        <div class="book-image">
-                                            <a href="">
-                                                <img src="images/list-books/Để Con Được Ốm -76-95-20.jpg" alt="">
-                                            </a>
-
-                                        </div>
-                                        <div class="book-info">
-                                            <div class="book-section-header">
-                                                <a href="" class="book-title">
-                                                    <h3>Để con được ốm</h3>
-                                                </a>
-                                            </div>
-                                            <div class="new-price">69.700đ</div>
-                                            <div class="old-price">85.000đ</div>
-                                            <div class="rating-box">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star-half-alt"></i>
-                                                <i class="far fa-star"></i>
-                                                &nbsp;5&nbsp;đánh giá
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-
-
-                                    <div class="book-item col-md-3">
-                                        <div class="book-image">
-                                            <a href="">
-                                                <img src="images/list-books/Để Con Được Ốm -76-95-20.jpg" alt="">
-                                            </a>
-
-                                        </div>
-                                        <div class="book-info">
-                                            <div class="book-section-header">
-                                                <a href="" class="book-title">
-                                                    <h3>Để con được ốm</h3>
-                                                </a>
-                                            </div>
-                                            <div class="new-price">69.700đ</div>
-                                            <div class="old-price">85.000đ</div>
-                                            <div class="rating-box">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star-half-alt"></i>
-                                                <i class="far fa-star"></i>
-                                                &nbsp;5&nbsp;đánh giá
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="book-item col-md-3">
-                                        <div class="book-image">
-                                            <a href="">
-                                                <img src="images/list-books/Để Con Được Ốm -76-95-20.jpg" alt="">
-                                            </a>
-
-                                        </div>
-                                        <div class="book-info">
-                                            <div class="book-section-header">
-                                                <a href="" class="book-title">
-                                                    <h3>Để con được ốm</h3>
-                                                </a>
-                                            </div>
-                                            <div class="new-price">69.700đ</div>
-                                            <div class="old-price">85.000đ</div>
-                                            <div class="rating-box">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star-half-alt"></i>
-                                                <i class="far fa-star"></i>
-                                                &nbsp;5&nbsp;đánh giá
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="book-item col-md-3">
-                                        <div class="book-image">
-                                            <a href="">
-                                                <img src="images/list-books/Để Con Được Ốm -76-95-20.jpg" alt="">
-                                            </a>
-
-                                        </div>
-                                        <div class="book-info">
-                                            <div class="book-section-header">
-                                                <a href="" class="book-title">
-                                                    <h3>Để con được ốm</h3>
-                                                </a>
-                                            </div>
-                                            <div class="new-price">69.700đ</div>
-                                            <div class="old-price">85.000đ</div>
-                                            <div class="rating-box">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star-half-alt"></i>
-                                                <i class="far fa-star"></i>
-                                                &nbsp;5&nbsp;đánh giá
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="book-item col-md-3">
-                                        <div class="book-image">
-                                            <a href="">
-                                                <img src="images/list-books/Để Con Được Ốm -76-95-20.jpg" alt="">
-                                            </a>
-
-                                        </div>
-                                        <div class="book-info">
-                                            <div class="book-section-header">
-                                                <a href="" class="book-title">
-                                                    <h3>Để con được ốm</h3>
-                                                </a>
-                                            </div>
-                                            <div class="new-price">69.700đ</div>
-                                            <div class="old-price">85.000đ</div>
-                                            <div class="rating-box">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star-half-alt"></i>
-                                                <i class="far fa-star"></i>
-                                                &nbsp;5&nbsp;đánh giá
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="book-item col-md-3">
-                                        <div class="book-image">
-                                            <a href="">
-                                                <img src="images/list-books/Để Con Được Ốm -76-95-20.jpg" alt="">
-                                            </a>
-
-                                        </div>
-                                        <div class="book-info">
-                                            <div class="book-section-header">
-                                                <a href="" class="book-title">
-                                                    <h3>Để con được ốm</h3>
-                                                </a>
-                                            </div>
-                                            <div class="new-price">69.700đ</div>
-                                            <div class="old-price">85.000đ</div>
-                                            <div class="rating-box">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star-half-alt"></i>
-                                                <i class="far fa-star"></i>
-                                                &nbsp;5&nbsp;đánh giá
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="book-item col-md-3">
-                                        <div class="book-image">
-                                            <a href="">
-                                                <img src="images/list-books/Để Con Được Ốm -76-95-20.jpg" alt="">
-                                            </a>
-
-                                        </div>
-                                        <div class="book-info">
-                                            <div class="book-section-header">
-                                                <a href="" class="book-title">
-                                                    <h3>Để con được ốm</h3>
-                                                </a>
-                                            </div>
-                                            <div class="new-price">69.700đ</div>
-                                            <div class="old-price">85.000đ</div>
-                                            <div class="rating-box">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star-half-alt"></i>
-                                                <i class="far fa-star"></i>
-                                                &nbsp;5&nbsp;đánh giá
-                                            </div>
-                                        </div>
-                                    </div>
+                                    </div> -->
+                                    
                                 </div>
                                 <div class="nav-pagination m-4">
                                     <ul class="pagination d-flex justify-content-end">

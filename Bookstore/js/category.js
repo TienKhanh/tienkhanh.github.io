@@ -1,58 +1,77 @@
 $(document).ready(function () {
-    function formatNumber(num) {
-        return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.')
-    }
 
     var category_filter = {};
     var supplier_filter = {};
 
-    var filter_item = $(".filter-item");
+    var sort_view = $("ul.sort-list li a.active").attr("sort-view");
+    var sort_str = `_sort=created_at&_order=desc`;
+    var search_str = "";
 
+    // render dữ liệu khi lần đầu vào tan category
+    renderUI();
+
+    $("ul.sort-list li a").click((event) => {
+        event.preventDefault();
+        $("ul.sort-list li a").removeClass("active");
+        event.target.classList.add("active");
+        sort_view = event.target.getAttribute("sort-view");
+        if (sort_view == "created_at") {
+            sort_str = `_sort=created_at&_order=desc`;
+        } else if (sort_view == "number_order") {
+            sort_str = `_sort=number_order&_order=desc`;
+        } else if (sort_view == "min_price") {
+            sort_str = `_sort=new_price&_order=asc`;
+        } else if (sort_view == "max_price") {
+            sort_str = `_sort=new_price&_order=desc`;
+        } else {
+            sort_str = `_sort=discount_percent&_order=desc`;
+        }
+        renderUI();
+    });
+
+    // Xử lý dữ liệu khi sử dụng các bộ lọc
+    var filter_item = $(".filter-item");
     filter_item.click((event) => {
         event.target.classList.toggle("checked");
 
         let search_type = event.target.getAttribute("filter-type");
         let search_key = event.currentTarget.id;
-        let search_str = "";
 
         // Thêm hoặc bớt phần tử của các bộ lọc
-        if(search_type == "category"){
+        if (search_type == "category") {
             if (category_filter[search_key]) {
                 delete category_filter[search_key];
             } else {
                 category_filter[search_key] = search_key;
             }
-            
+
         }
-        if(search_type == "supplier"){
+        if (search_type == "supplier") {
             if (supplier_filter[search_key]) {
                 delete supplier_filter[search_key];
             } else {
                 supplier_filter[search_key] = search_key;
             }
-            
-        }
 
+        }
+        search_str = "";
         // Chạy vòng lặp qua từng phần tử của các bộ lọc
         for (item in category_filter) {
             search_str += `category_like=${item}&`;
         }
-
         for (item in supplier_filter) {
             search_str += `supplier_like=${item}&`;
         }
-
         // Bỏ & cuối cùng của search string
         if (search_str != "") {
             search_str = search_str.slice(0, search_str.length - 1);
         }
-        
-        // Tạo url vào json server và in ra kết quả
-        
-        let search_url = `http://localhost:3000/book_items?${search_str}`;
+        renderUI()
+    });
 
-        console.log(search_url)
-
+    function renderUI() {
+        let search_url = `http://localhost:3000/book_items?${search_str}&${sort_str}`;
+        console.log(search_url);
         $.get(search_url, function (data) {
             let product_list = $(".category-product .product-list");
             let list_str = "";
@@ -92,29 +111,12 @@ $(document).ready(function () {
                 product_list.html(`<p class="no-item">Không tìm thấy kết quả nào</p>`);
             }
         });
-    });
-    // let vanhoc_input = $('.filter_input')
-    // vanhoc_input.click((event)=>{
-    //     console.log(`event`, event)
-    //     let key = event.currentTarget.id
-    //     // debugger
-    //     if(filter[key]) {
-    //         delete filter[key]
-    //     } else {
-    //         filter[key] = key
-    //     }
+    }
 
-
-    //     let str = ''
-    //     for(item in filter) {
-    //         console.log(`item`, item)
-    //         str += `category_like=${item}&`
-    //     }
-    //     if(str){
-    //         str.slice(0,str.length-1)
-    //     }
-    //     let url = `${window.location.href}?${str}`
-    //     window.location.replace(url)
-    // })
+    // Hàm format giá tiền
+    function formatNumber(num) {
+        return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.')
+    }
 
 });
+
