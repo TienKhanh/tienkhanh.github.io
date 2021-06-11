@@ -1,0 +1,67 @@
+Cách cài NPM: https://www.npmjs.com/get-npm
+
+npm install -g create-react-app
+create-react-app my-app
+
+PowerShell quyen admin
+set-executionpolicy remotesigned
+npm config set prefix /usr/local
+
+npm start
+
+src/app.js, thêm
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <p>
+            Edit <code>src/App.js</code> and save to reload.
+        </p>
+          <a
+            className="App-link"
+            href="https://reactjs.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Learn React
+        </a>
+        </header>
+      </div>
+    );
+  }
+}
+
+
+Cac thuoc tinh chua trong props
+
+component co state co the thay doi behaver cua component khac goi laf component statefull
+component stateless la component co state nhung khong thay doi behaver cua component khac (hoac ...)
+ham render se chay lai moi lan state thay doi
+
+Thu tu ham chay trong reactjs:
+- constructor: co the gan state bang props ngay tai day (Mounting lifecycle : khoi tao ban dau)
+
+- getDerivedStateFromProps(props, state) : update du lieu truoc khi render, khoi tao state bang du lieu tu props (rat it ng dung, vi hay gan ngay tu constructor)
+
+- render: khung html
+
+- componentDidMount: ham lay data tu server update du lieu vao khung cua render (hay dung), chay ngay sau khi render xong toan bo DOM
+
+
+UPDATE: thu tu chay nhu sau:
+getDerivedStateFromProps() -> Update lifeCycler
+shouldComponentUpdate() -> co render lai khong, default la true (co render lai)
+getSnapshotBeforeUpdate(): hamf nay chay ngay truoc khi duoc update lai
+render()
+componentDidUpdate(): ham nay chay ngay sau khi duoc update lai
+
+--------------------------------------------------------------------
+khi setState thi se render lai.
+
+
+
+
+
+

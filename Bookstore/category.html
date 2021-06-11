@@ -34,7 +34,7 @@
                 <div class="main-menu-box">
                     <ul class="main-menu">
                         <li class="dropdown book-category">
-                            <a href="category.html" class="dropdown-toggle">
+                            <a href="category.html" class="dropdown-toggle" id="sachtrongnuoc">
                                 Sách trong nước
                             </a>
                             <div class="dropdown-menu">
@@ -211,24 +211,24 @@
                                 </div>
                                 <div class="nav-pagination m-4">
                                     <ul class="pagination d-flex justify-content-end">
-                                        <li class="page-item">
+                                        <!-- <li class="page-item">
                                             <a href="" class="page-link"> <i class="fas fa-chevron-left"></i> </a>
                                         </li>
-                                        <li class="page-item current">
-                                            <a href="" class="page-link">1</a>
+                                        <li class="page-item">
+                                            <a href="" class="page-link current" page-id="1" >1</a>
                                         </li>
                                         <li class="page-item">
-                                            <a href="" class="page-link">2</a>
+                                            <a href="" class="page-link" page-id="2" >2</a>
                                         </li>
                                         <li class="page-item">
-                                            <a href="" class="page-link">3</a>
+                                            <a href="" class="page-link" page-id="3" >3</a>
                                         </li>
                                         <li class="page-item">
-                                            <a href="" class="page-link">4</a>
+                                            <a href="" class="page-link" page-id="4" >4</a>
                                         </li>
                                         <li class="page-item">
-                                            <a href="" class="page-link"> <i class="fas fa-chevron-right"></i> </a>
-                                        </li>
+                                            <a href="" class="page-link" page-id="4" > <i class="fas fa-chevron-right"></i> </a>
+                                        </li> -->
                                         
                                     </ul>
                                 </div>
@@ -244,28 +244,69 @@
         <div class="footer">
             <div class="footer-top">
                 <div class="container">
-                    <ul>
-                        <li><a href="">Về chúng tôi</a></li>
-                        <li><a href="">Lần đầu đến đây</a></li>
-                        <li>
+                    <div class="row">
+                        <div class="col-2 social-item">
                             <a href="">
-                                <img src="images/logo/Logo-black-bg.png" alt="" width="150px">
+                                <i class="fab fa-facebook-f"></i>
+                                <span class="social-name">facebook</span>
                             </a>
-                        </li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Facebook</a></li>
-                    </ul>
+                        </div>
+                        <div class="col-2 social-item">
+                            <a href="">
+                                <i class="fab fa-instagram"></i>
+                                <span class="social-name">instagram</span>
+                            </a>
+                        </div>
+                        <div class="col-2 social-item">
+                            <a href="">
+                                <i class="fab fa-linkedin-in"></i>
+                                <span class="social-name">linkedin</span>
+                            </a>
+                        </div>
+                        <div class="col-2 social-item">
+                            <a href="">
+                                <i class="fab fa-pinterest"></i>
+                                <span class="social-name">pinterest</span>
+                            </a>
+                        </div>
+                        <div class="col-2 social-item">
+                            <a href="">
+                                <i class="fab fa-reddit"></i>
+                                <span class="social-name">reddit</span>
+                            </a>
+                        </div>
+                        <div class="col-2 social-item">
+                            <a href="">
+                                <i class="fab fa-twitter"></i>
+                                <span class="social-name">twitter</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                
+
             </div>
             <div class="footer-bottom">
                 <div class="container">
-                    <ul>
-                        <li class="text-right" style="padding-right: 80px;"><a href="">Điều khoản</a></li>
-                        <li class="text-left" style="padding-left: 80px;"><a href="">Chính sách</a></li>
-                    </ul>
+                    <div class="row">
+                        <div class="col-sm-6 footer-copy">
+                            © Liên hệ hỗ trợ: vnbookteam@gmail.com
+                        </div>
+                        <div class="col-sm-6 footer-submenu">
+                            <ul>
+                                <li><a href="">Vnbook.vn</a></li>
+                                <li><a href="">Về chúng tôi</a></li>
+                                <li><a href="">Liên hệ</a></li>
+                                <li><a href="">Điều khoản</a></li>
+                                <li><a href="">Chính sách bảo mật</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+        
+        <div class="btn-back-top">
+            <i class="fas fa-arrow-up"></i>
         </div>
     </div>
 
@@ -280,6 +321,7 @@
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous"></script>
     <script src="OwlCarousel/js/owl.carousel.min.js"></script>
+    <script src="./js/database.js"></script>
     <script src="./js/category.js"></script>
 </body>
 

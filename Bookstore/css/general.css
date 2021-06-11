@@ -608,6 +608,7 @@ ol.breadcrumb, ul.breadcrumb {
 .main-container {
     background: #eeeeee;
     padding: 20px 0 60px 0;
+    min-height: 820px;
 }
 .container {
     padding-right: 0;
@@ -655,7 +656,7 @@ ol.breadcrumb, ul.breadcrumb {
     background: #fff;
 }
 
-.pagination .page-item.current .page-link {
+.pagination .page-item .page-link.current {
     color: #fff;
     background: #f26a19;
 }

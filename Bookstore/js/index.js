@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
     $('html').on('click', function (event) {
         var target = $(event.target);
         console.log(target)
@@ -14,7 +13,7 @@ $(document).ready(function () {
     function formatNumber(num) {
         return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.')
     }
-    
+
     $(".btn-back-top").hide();
     $(window).scroll(function () {
         if ($(window).scrollTop() > 300) {
@@ -33,6 +32,7 @@ $(document).ready(function () {
 
 
     // Buoc 1: get data tu json server o day
+
     $.get("http://localhost:3000/book_items", function (data) {
         // Lay data xong thi check xem lay thanh cong khong, neu thanh cong thi update data vao DOM
         if (data && data.length > 0) {
