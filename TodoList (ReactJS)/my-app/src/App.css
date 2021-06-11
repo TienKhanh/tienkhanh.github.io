@@ -36,3 +36,25 @@
     transform: rotate(360deg);
   }
 }
+
+#root {
+  width: 500px;
+}
+
+
+input, textarea, button {
+  border-radius: 3px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 8px 10px;
+  display: block;
+  font-size: 17px;
+  width: 80%;
+  margin-top: 20px;
+  border: 1px solid lightgrey;
+}
+
+button:hover {
+  cursor: pointer;
+  background:lightslategrey;
+}
