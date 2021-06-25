@@ -1,0 +1,13 @@
+cd book-store:
+
+https://reactrouter.com/web/guides/quick-start
+npm install react-router-dom
+Vào tab basic để xem code mẫu.
+
+https://material-ui.com/getting-started/installation/
+npm install @material-ui/core
+
+https://reactjs.org/docs/typechecking-with-proptypes.html
+
+https://stackoverflow.com/questions/34521797/how-to-add-multiple-classes-to-a-reactjs-component
+npm install --save clsx

@@ -41,8 +41,10 @@
   width: 500px;
 }
 
-
-input, textarea, button {
+.App {
+  margin: 0 auto;
+}
+.App>div,input, textarea, button {
   border-radius: 3px;
   box-sizing: border-box;
   margin: 0 auto;
@@ -51,10 +53,15 @@ input, textarea, button {
   font-size: 17px;
   width: 80%;
   margin-top: 20px;
-  border: 1px solid lightgrey;
+  
 }
 
+
+input, textarea, button{
+  border: 1px solid lightgrey;
+}
 button:hover {
   cursor: pointer;
   background:lightslategrey;
 }
+
