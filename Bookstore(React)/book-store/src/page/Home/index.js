@@ -9,7 +9,7 @@ const Home = () => {
         <div>
             <Header/>
             {/* goi them cai baner */}
-            <Feature/>
+            {/* <Feature/> */}
             {/* <BestSler data={dataLayduojc} */}
         </div>
     )

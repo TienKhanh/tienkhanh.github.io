@@ -1,14 +1,20 @@
 import React, {useState} from 'react'
 import { makeStyles } from '@material-ui/core/styles';
-import { Icon } from '@material-ui/core';
-
-import SearchBox from '../../SearchBox';
+import { Icon, Container } from '@material-ui/core';
 import Menu from '../../Menu';
+import Logo from '../../Logo';
 
 
 const useStyles = makeStyles((theme) => ({
-    myRoot: {
-        backgroundColor: 'blue'
+    wrapHeader: {
+        boxShadow: "0 .125rem .25rem rgba(0,0,0,.075)!important"
+    },
+    
+    headerBox: {
+        height: '60px',
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
     }
   }));
 
@@ -20,35 +26,47 @@ const Header = () => {
         {
             label: 'Sách trong nước',
             link: '/store',
-            childres: [
+            childrens: [
                 {
-                    label: 'sach 1',
+                    label: 'Văn học',
                 },
                 {
-                    label: 'sach 2',
+                    label: 'Sách kinh tế',
                 },
                 {
-                    label: 'sach 3',
+                    label: 'Tâm lý - Kỹ năng sống',
                 },
                 {
-                    label: 'sach 4',
+                    label: 'Nuôi dạy con',
+                },
+                {
+                    label: 'Sách thiếu nhi',
+                },
+                {
+                    label: 'Tiểu sử - Hồi ký',
+                },
+                {
+                    label: 'Sách học ngoại ngữ',
                 },
             ]
         },
         {
             label: 'Sách nước ngoài',
-            childres: [
+            childrens: [
                 {
-                    label: 'sach 1',
+                    label: 'Fiction',
                 },
                 {
-                    label: 'sach 2',
+                    label: 'Business & management',
                 },
                 {
-                    label: 'sach 3',
+                    label: 'Personal development',
                 },
                 {
-                    label: 'sach 4',
+                    label: "Children's books",
+                },
+                {
+                    label: "Dictionaries",
                 },
             ]
         },
@@ -60,15 +78,14 @@ const Header = () => {
         }
     ]
 
-
     const classes = useStyles();
     return (
-        <div >
-            <Menu dataList={menu}/>
-            {
-                showSearchBox && <SearchBox/>
-            }
-            <Icon className="fa far fa-search" onClick={() =>setShowSearchBox(!showSearchBox)}/>
+        <div className={classes.wrapHeader}>
+            <Container maxWidth="lg" className={classes.headerBox}>
+                <Logo />
+                <Menu dataList={menu}/>
+                <Icon className="fa far fa-search" onClick={() =>setShowSearchBox(!showSearchBox)}/>
+            </Container>
         </div>
     )
 }
