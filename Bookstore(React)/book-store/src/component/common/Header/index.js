@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Icon, Container } from '@material-ui/core';
 import Menu from '../../Menu';
 import Logo from '../../Logo';
+import Login from '../../Login';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -20,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
 
 const Header = () => {
 
-    const [showSearchBox, setShowSearchBox] = useState(false)
+    // const [showSearchBox, setShowSearchBox] = useState(false)
 
     const menu = [
         {
@@ -84,8 +85,11 @@ const Header = () => {
             <Container maxWidth="lg" className={classes.headerBox}>
                 <Logo />
                 <Menu dataList={menu}/>
-                <Icon className="fa far fa-search" onClick={() =>setShowSearchBox(!showSearchBox)}/>
+                <Login />
+                {/* <Icon className="fa far fa-search" onClick={() =>setShowSearchBox(!showSearchBox)}/> */}
             </Container>
+            
+            
         </div>
     )
 }

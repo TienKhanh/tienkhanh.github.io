@@ -1,12 +1,11 @@
-import React from 'react'
-import './index.css'
-
+import React from 'react';
+import './index.css';
+import BannerStore from '../../component/BannerStore';
 import { makeStyles } from '@material-ui/core/styles';
+import ProductCard from '../../component/common/ProductCard';
 
 const useStyles = makeStyles(() => ({
-    mainStore: {
-        backgroundColor: 'red',
-    }
+
 }));
 
 const Store = () => {
@@ -14,7 +13,11 @@ const Store = () => {
 
     // lay du lieu thi o day
     return (
-        <div className={classes.mainStore} > day la store </div>
+        <div className={classes.mainStore} > 
+            <ProductCard />
+            <BannerStore />
+            
+        </div>
         
 
     )
