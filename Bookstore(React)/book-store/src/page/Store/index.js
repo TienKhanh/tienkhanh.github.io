@@ -1,6 +1,5 @@
 import React from 'react';
 import './index.css';
-import BannerStore from '../../component/BannerStore';
 import { makeStyles } from '@material-ui/core/styles';
 import ProductCard from '../../component/common/ProductCard';
 
@@ -15,8 +14,6 @@ const Store = () => {
     return (
         <div className={classes.mainStore} > 
             <ProductCard />
-            <BannerStore />
-            
         </div>
         
 

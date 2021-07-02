@@ -1,16 +1,37 @@
-import React from 'react'
-import Header from '../../component/common/Header'
-import Feature from '../../component/common/Feature'
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import Header from '../../component/common/Header';
+import Featured from '../../component/common/Featured';
+import Banner from '../../component/Banner';
+import Footer from '../../component/common/Footer';
+import SeeList from '../../component/common/SeeList';
 
+
+const useStyles = makeStyles((theme) => ({
+    
+    wrapMain : {
+        background: "none",
+        padding: "0",
+        backgroundImage: "url('https://tienkhanh.github.io/Bookstore/images/background/bg-wallpaper-1.jpg')",
+        backgroundSize: "cover",
+        backgroundAttachment: "fixed",
+        minHeight: '820px',
+    }
+
+}));
 const Home = () => {
-    // data lay ra o day danh sach best seler => chi lay cac sach best seler
-    // data fake o day , cho vao state
+    const classes = useStyles();
     return (
         <div>
-            <Header/>
-            {/* goi them cai baner */}
-            {/* <Feature/> */}
-            {/* <BestSler data={dataLayduojc} */}
+            <Header />
+            
+            <div className={classes.wrapMain}>
+                <Banner />
+                <Featured />
+                <SeeList />
+            </div>
+            <Footer />        
+
         </div>
     )
 }

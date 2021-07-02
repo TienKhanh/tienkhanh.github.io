@@ -1,10 +1,10 @@
 import React, {useState} from 'react'
 import { makeStyles } from '@material-ui/core/styles';
-import { Icon, Container } from '@material-ui/core';
+import { Container } from '@material-ui/core';
 import Menu from '../../Menu';
 import Logo from '../../Logo';
 import Login from '../../Login';
-
+import SearchBox from '../../SearchBox';
 
 const useStyles = makeStyles((theme) => ({
     wrapHeader: {
@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
 
 const Header = () => {
 
-    // const [showSearchBox, setShowSearchBox] = useState(false)
+    const [showSearchBox, setShowSearchBox] = useState(false)
 
     const menu = [
         {
@@ -85,6 +85,7 @@ const Header = () => {
             <Container maxWidth="lg" className={classes.headerBox}>
                 <Logo />
                 <Menu dataList={menu}/>
+                <SearchBox />
                 <Login />
                 {/* <Icon className="fa far fa-search" onClick={() =>setShowSearchBox(!showSearchBox)}/> */}
             </Container>

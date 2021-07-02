@@ -76,74 +76,7 @@ const useStyles = makeStyles((theme) => ({
     overflow: 'hidden',
     borderTop: '1px solid #e9ecef',
   },
-  wrapSearch : {
-    position: "relative",
-    lineHeight: "60px",
-    width: "60px",
-    textAlign: "center",
-    "&:hover" : {
-      color: '#f26a19',
-      cursor: "pointer",
-    }
-  },
-
-  searchText:{
-    width: "230px",
-    border: "1px solid #f26a19",
-    padding: "5px 10px",
-    outline: "none",
-  },
-  searchBtn: {
-    display: "inline-block",
-    textAlign: "center",
-    width: "80px",
-    padding: "5px 0",
-    background: "#f26a19",
-    border: "1px solid #f26a19",
-    outline: "none",
-    cursor: "pointer",
-    color: "#fff",
-    marginLeft: "-6px",
-  },
-  searchBox : {
-    "&::before" : {
-      content: '""',
-      position: "absolute",
-      width: 0,
-      height: 0,
-      borderLeft: "8px solid transparent",
-      borderRight: "8px solid transparent",
-      borderBottom: "10px solid #f26a19",
-      top: -13,
-      right: 13,
-
-    },
-    background: "#f7f7f7",
-    position: "absolute",
-    top: "60px",
-    right: "10px",
-    width: "350px",
-    padding: "15px 15px 15px 20px",
-    boxShadow:'0 0 10px rgb(0 0 0 / 50%)',
-    borderTop: "4px solid #f26a19",
-    zIndex: "2",
-    lineHeight: "normal",
-    visibility: "visible",
-    opacity: "1",
-    transition: 'all 0.4s ease',
-    WebkitTransform: "translate3d(0,20px,0)",
-    // pointerEvents: "none",
-  },
-  searchLogo : {
-    "& > i " : {
-      fontSize: 18,
-      color: '#212529',
-      cursor: 'pointer',
-    },
-    "& > i:hover " : {
-      color: '#f26a19',
-    }
-  },
+  
 
 }));
 
@@ -197,16 +130,6 @@ const Menu = ({ dataList }) => {
   return (
     <div className={classes.menuBox}>
       <ul className={classes.wrapMenu}>{renderMenu()}</ul>
-
-      <div className={classes.wrapSearch}>
-        <div className={classes.searchLogo}>
-          <i class="fas fa-search"></i>
-        </div>
-        <div className={classes.searchBox}>
-          <input type="text" class={classes.searchText} placeholder="Nhập tên sách" />
-          <a href="" class={classes.searchBtn}>Tìm kiếm</a>
-        </div>
-      </div>
     </div>
   );
 };
