@@ -1,10 +1,16 @@
 import React from 'react';
 import './index.css';
 import { makeStyles } from '@material-ui/core/styles';
-import ProductCard from '../../component/common/ProductCard';
+import Header from '../../component/common/Header';
+import Footer from '../../component/common/Footer';
+import BreadCrumb from '../../component/common/BreadCrumb';
+
 
 const useStyles = makeStyles(() => ({
-
+    wrapMain : {
+        background: '#eeeeee',
+        minHeight: '820px',
+    }
 }));
 
 const Store = () => {
@@ -12,11 +18,13 @@ const Store = () => {
 
     // lay du lieu thi o day
     return (
-        <div className={classes.mainStore} > 
-            <ProductCard />
+        <div> 
+            <Header />
+            <div className={classes.wrapMain}>
+                <BreadCrumb />
+            </div>
+            <Footer />
         </div>
-        
-
     )
 }
 

@@ -1,8 +1,34 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles';
 import { Link } from "react-router-dom";
-const useStyles = makeStyles((theme) => ({
+import { Container } from '@material-ui/core';
+import clsx from "clsx";
 
+const useStyles = makeStyles((theme) => ({
+    breadcrumb: {
+        display: 'flex',
+        flexWrap: 'wrap',
+        padding: '.75rem 0',
+        listStyle: 'none',
+        margin: 0,
+    },
+    breadcrumbItem: {
+        '& a':{
+            color: '#999',
+        },
+        '&:after':{
+            // display: "inline-block",
+            // paddingRight: ".5rem",
+            // color: "#999",
+            // fontFamily: "Font Awesome 5 Free",
+            // fontWeight: "900",
+            content: '>',
+            fontSize: 11,
+            width: 10,
+            height: 10,
+            
+        }
+    }
   }));
 
 const BreadCrumb = () => {
@@ -23,21 +49,26 @@ const BreadCrumb = () => {
     ]
     const renderBreadCrumb = () => {
         return (
-            <div>
-              {dataBreadCrumb.length &&
-                dataBreadCrumb.map((item, index) => {
-                  return <span> <Link to={`${item.linkItem ? item.linkItem : ""}`}>{item.title}</Link> {`${dataBreadCrumb.length - 1 === index ? "" : ">"}`}</span>
+        <React.Fragment>
+              {dataBreadCrumb.length && dataBreadCrumb.map((item, index) => {
+                    var check = dataBreadCrumb.length - 1 === index;
+                    console.log(check)
+                    return <li className={clsx(classes.breadcrumbItem, check && classes.active)}>
+                        <Link to={`${item.linkItem ? item.linkItem : ""}`}>{item.title}</Link>
+                    </li>
                 })}
-            </div>
+          </React.Fragment>  
           );
     }
 
     return (
-        <div >
-            {
-                renderBreadCrumb()
-            }
-        </div>
+        <Container>
+            
+                <ol className={classes.breadcrumb}>
+                        {renderBreadCrumb()}
+                </ol>
+            
+        </Container>
     )
 }
 

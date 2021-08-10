@@ -3,7 +3,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import PropTypes from "prop-types";
 import clsx from "clsx";
 import { Link } from "react-router-dom";
-import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 const useStyles = makeStyles((theme) => ({
   menuBox: {
     display: 'flex',
@@ -45,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
     float: 'left',
     minWidth: '10rem',
     padding: '.5rem 0',
-    margin: '.1rem 0 0',
+    margin: '0 0',
     fontSize: '1rem',
     color: '#212529',
     textAlign: 'left',
@@ -85,29 +84,29 @@ const Menu = ({ dataList }) => {
 
   const renderSubmenu = (list) => {
     return (
-      <>
+      <React.Fragment>
         {list.map((item, index) => {
-          if( index + 1 == list.length) {
-            return (
-              <Link to={`${item.link ? item.link : ""}`}  className={classes.subItem}> {item.label} </Link>
-          );
-          }
-          return (
-              <>
-              <Link to={`${item.link ? item.link : ""}`}  className={classes.subItem}> 
-                {item.label} 
-              </Link>
-              <div className={classes.subDivider}></div>
-              </>
-          );
-        })}
-      </>
+                  if( index + 1 == list.length) {
+                    return (
+                      <Link to={`${item.link ? item.link : ""}`}  className={classes.subItem}> {item.label} </Link>
+                  );
+                  }
+                  return (
+                      <React.Fragment>
+                      <Link to={`${item.link ? item.link : ""}`}  className={classes.subItem}> 
+                        {item.label} 
+                      </Link>
+                      <div className={classes.subDivider}></div>
+                      </React.Fragment>
+                  );
+                })}
+      </React.Fragment>
     );
   };
 
   const renderMenu = () => {
     return (
-      <>
+      <React.Fragment>
         {dataList.length &&
           dataList.map((item, index) => {
             return (
@@ -123,7 +122,7 @@ const Menu = ({ dataList }) => {
               </li>
             );
           })}
-      </>
+      </React.Fragment>
     );
   };
 

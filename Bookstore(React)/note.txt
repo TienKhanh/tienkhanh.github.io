@@ -1,1 +1,0 @@
-1. Thêm component Cart cho nút giỏ hàng

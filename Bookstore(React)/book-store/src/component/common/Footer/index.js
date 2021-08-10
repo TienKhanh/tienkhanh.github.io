@@ -1,3 +1,4 @@
+import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import SocialNetwork from '../../SocialNetwork';
 import CopyRight from '../../CopyRight';

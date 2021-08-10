@@ -5,6 +5,7 @@ import Featured from '../../component/common/Featured';
 import Banner from '../../component/Banner';
 import Footer from '../../component/common/Footer';
 import SeeList from '../../component/common/SeeList';
+import ReviewSection from '../../component/common/ReviewSection';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -29,6 +30,7 @@ const Home = () => {
                 <Banner />
                 <Featured />
                 <SeeList />
+                <ReviewSection />
             </div>
             <Footer />        
 

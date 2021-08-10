@@ -1,6 +1,6 @@
-import React, {useState} from 'react'
+import React from 'react'
 import { makeStyles } from '@material-ui/core/styles';
-import { Icon, Container } from '@material-ui/core';
+import { Container } from '@material-ui/core';
 import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({

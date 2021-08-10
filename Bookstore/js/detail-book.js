@@ -67,3 +67,27 @@
 //     });
 
 // });
+
+
+function addCart() {
+    console.log('add cart')
+}
+
+function buyNow(){
+    console.log('Buy now')
+    window.location.href = "check-cart.html";
+}
+
+var count = 1
+var qty = document.querySelector(".qty");
+
+function plus(){
+    count++
+    qty.value = count
+}
+function minus(){
+    if(count > 1){
+        count--
+        qty.value = count
+    }
+}

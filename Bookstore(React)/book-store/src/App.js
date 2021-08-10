@@ -5,11 +5,9 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import Home from './page/Home'
-import Store from './page/Store'
-
-
-
+import Home from './page/Home';
+import Store from './page/Store';
+import React from 'react';
 
 
 function App() {

@@ -143,14 +143,14 @@
                             <div class="number-cart">
                                 <strong>Số lượng: </strong>
                                 <div class="quantity">
-                                    <input type="button" value="-" class="minus">
-                                    <input type="tel" class="qty" value="1">
-                                    <input type="button" value="+" class="plus">
+                                    <input type="button" value="-" class="minus" onclick="minus()">
+                                    <input type="tel" class="qty" value="1" disabled>
+                                    <input type="button" value="+" class="plus" onclick="plus()">
                                 </div>
                             </div>
                             <div class="order-btn-box">
-                                <button class="buy-now">Mua ngay</button>
-                                <button class="add-to-cart">Thêm vào giỏ hàng</button>
+                                <button class="buy-now" onclick="buyNow()">Mua ngay</button>
+                                <button class="add-to-cart" onclick="addCart()">Thêm vào giỏ hàng</button>
                             </div>
                         </div>
                         <div class="detail-event-cart">
